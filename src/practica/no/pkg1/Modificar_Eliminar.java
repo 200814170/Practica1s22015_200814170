@@ -184,7 +184,7 @@ public class Modificar_Eliminar extends javax.swing.JFrame {
                     @Override
                     public void mouseClicked(MouseEvent me) {
                         int conta = 0;
-                        for (int i = 0; i < 100; i++) {
+                        for (int i = 0; i < longitud; i++) {
                             if (me.getSource().equals(botones[i])) {
                                 //JOptionPane.showMessageDialog(null, "" + i);
                                 conta = i;
@@ -269,7 +269,7 @@ public class Modificar_Eliminar extends javax.swing.JFrame {
                             @Override
                             public void mouseClicked(MouseEvent me) {
                                 int conta = 0;
-                                for (int i = 0; i < 100; i++) {
+                                for (int i = 0; i < longitud; i++) {
                                     if (me.getSource().equals(botones[i])) {
                                         //JOptionPane.showMessageDialog(null, "" + i);
                                         conta = i;
