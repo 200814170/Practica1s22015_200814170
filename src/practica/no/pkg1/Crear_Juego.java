@@ -31,10 +31,13 @@ public class Crear_Juego extends javax.swing.JFrame {
     int contador_filas = 2;
     int contador_columnas = 4;
     int donde = 0;
+    int conta_celdas;
+    int conta_columnas;
     String objeto_seleccionado = "";
     //Carga_Objetos carga_objetos = new Carga_Objetos(null, null, 0);
     //Nodo_Lista temp = /*carga_objetos.*/Lista_Objetos.primero;
     Lista_Doble Lista_Objetos = new Lista_Doble();
+    Matriz Matriz_Tablero = new Matriz();
 
     public Crear_Juego() {
         initComponents();
@@ -100,7 +103,9 @@ public class Crear_Juego extends javax.swing.JFrame {
         Lista_Objetos.sampar_lista("Mario14", "Mario", 29);
         Lista_Objetos.sampar_lista("Mario15", "Pared", 30);
 
-        Lista_Objetos.imprimir();
+        //Lista_Objetos.imprimir();
+        
+        this.llenar_matriz(contador_columnas, contador_filas, "vacio");
 
         this.crear_pane_objetos();
         this.crear_pane_principal(contador_filas, contador_columnas);
@@ -207,6 +212,9 @@ public class Crear_Juego extends javax.swing.JFrame {
         // Agregar fila
         contador_filas++;
         this.crear_pane_principal(contador_filas, contador_columnas);
+        this.Matriz_Tablero.eliminar_matriz();
+        System.out.print("\n \n\n agregando fila\n");
+        this.llenar_matriz(contador_columnas, contador_filas, "vacio");
         SwingUtilities.updateComponentTreeUI(this);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -214,6 +222,9 @@ public class Crear_Juego extends javax.swing.JFrame {
         // Agregar Columna
         contador_columnas++;
         this.crear_pane_principal(contador_filas, contador_columnas);
+        this.Matriz_Tablero.eliminar_matriz();
+        System.out.print("\n \n\n agregando columna\n");
+        this.llenar_matriz(contador_columnas, contador_filas, "vacio");
         SwingUtilities.updateComponentTreeUI(this);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -335,17 +346,21 @@ public class Crear_Juego extends javax.swing.JFrame {
                 public void mouseClicked(MouseEvent me) {
                     for (int i = 0; i < contador_Lista; i++) {
                         if (me.getSource().equals(label[i])) {
-                            //JOptionPane.showMessageDialog(null, "DONDE: " + i);
+                            JOptionPane.showMessageDialog(null, "DONDE: " + i);
                             if (objeto_seleccionado.equals("")) {
                                 JOptionPane.showMessageDialog(null, "\nNo ha seleccionado un objeto\nSeleccione uno porfavor", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
                             } else {
                                 donde = i;
+                                conta_celdas = i;
+                                JOptionPane.showMessageDialog(null, "Contador celdas: " + (conta_celdas + 1));
                                 ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
                                 Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
                                 label[donde].removeAll();
                                 label[donde].setIcon(icono);
                                 label[donde].repaint();
                                 label[donde].setIcon(icono);
+                                //Matriz_Tablero.modificar(conta_celdas, conta_celdas, objeto_seleccionado);
+                                //Matriz_Tablero.imprimir_matriz();
                             }
                         }
                     }
@@ -398,6 +413,7 @@ public class Crear_Juego extends javax.swing.JFrame {
                 label[columnas].repaint();
                 //label[columnas].setIcon(icono1);
                 label[columnas].setText("" + (columnas + 1));
+                this.conta_columnas = columnas;
                 label[columnas].addMouseListener(new MouseListener() {
 
                     @Override
@@ -409,6 +425,8 @@ public class Crear_Juego extends javax.swing.JFrame {
                                     JOptionPane.showMessageDialog(null, "\nNo ha seleccionado un objeto\nSeleccione uno porfavor", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
                                 } else {
                                     donde = i;
+                                    conta_columnas = i;
+                                    JOptionPane.showMessageDialog(null, "Contador celdas: " + (conta_celdas + 1) + " Contador columnas: " + (conta_columnas + 1));
                                     ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
                                     Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
                                     label[donde].removeAll();
@@ -416,6 +434,8 @@ public class Crear_Juego extends javax.swing.JFrame {
                                     label[donde].repaint();
                                     label[donde].setIcon(icono);
                                     objeto_seleccionado = "";
+                                    //Matriz_Tablero.modificar(conta_celdas, conta_columnas, objeto_seleccionado);
+                                    //Matriz_Tablero.imprimir_matriz();
                                 }
                             }
                         }
@@ -584,4 +604,21 @@ public class Crear_Juego extends javax.swing.JFrame {
         this.setVisible(false);
     }
 
+    public void llenar_matriz(int largo, int ancho, String contenido) {
+        Matriz_Tablero.sampar_matriz(contenido, 0);
+        for (int i = 0; i < largo - 1; i++) {
+            Matriz_Tablero.sampar_matriz(contenido, 1);
+        }
+        for (int i = 0; i < ancho - 1; i++) {
+            Matriz_Tablero.sampar_matriz(contenido, 2);
+            for (int j = 0; j < largo - 1; j++) {
+                Matriz_Tablero.sampar_matriz(contenido, 3);
+            }
+        }
+        Matriz_Tablero.imprimir_matriz();
+    }
+    
+    public void agregar_fila(){
+        
+    }
 }
