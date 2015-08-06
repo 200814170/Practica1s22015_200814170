@@ -17,8 +17,8 @@ public class Matriz {
     Nodo_Matriz ultimo_columna;
     Nodo_Matriz raiz;
 
-    public void sampar_matriz(String objeto, int opcion) {
-        Nodo_Matriz nuevo = new Nodo_Matriz(objeto);
+    public void sampar_matriz(String objeto, int ID, int opcion) {
+        Nodo_Matriz nuevo = new Nodo_Matriz(objeto, ID);
         if (primero_fila == null && opcion == 0) {//opcion cero insertar el primer nodo
             nuevo.izquierda = null;
             nuevo.derecha = null;
@@ -66,7 +66,7 @@ public class Matriz {
                 Nodo_Matriz actual_fila = actual_columna;
                 for (int i = 0; i < 1000; i++) {
                     if (actual_fila != null) {
-                        System.out.println("" + actual_fila.objeto);
+                        System.out.println("ID: " + actual_fila.ID + " Objeto: " + actual_fila.objeto);
                     } else {
                         break;
                     }
@@ -79,20 +79,24 @@ public class Matriz {
         }
     }
 
-    public void modificar(int largo, int ancho, String contenido) {
+    public void modificar(int donde, String contenido) {
         Nodo_Matriz actual_columna = raiz;
-        for (int j = 1; j < largo + 1; j++) {
-            if (j == largo) {
-                Nodo_Matriz actual_fila = actual_columna;
-                for (int i = 1; i < ancho + 1; i++) {
-                    if (i == ancho) {
-                        System.out.println("Encontrado: " + actual_fila.objeto);
-                        actual_fila.objeto = contenido;
-                    }
-                    actual_fila = actual_fila.izquierda;
+        for (int j = 1; j < 1000 + 1; j++) {
+            Nodo_Matriz actual_fila = actual_columna;
+            for (int i = 1; i < 1000 + 1; i++) {
+                if (actual_fila.ID == donde) {
+                    System.out.println("\nEncontrado: " + actual_fila.objeto);
+                    actual_fila.objeto = contenido;
+                }
+                actual_fila = actual_fila.izquierda;
+                if (actual_fila == null) {
+                    break;
                 }
             }
             actual_columna = actual_columna.abajo;
+            if (actual_columna == null) {
+                break;
+            }
         }
     }
 

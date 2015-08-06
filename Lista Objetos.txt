@@ -1,0 +1,12 @@
+digraph G{
+Nodo0 [shape=box, label = "Mario
+z"];
+
+Nodo1 [shape=box, label = "Castillo
+z"];
+
+Nodo0 -> Nodo1;
+Nodo1 -> Nodo0;
+
+{rank = same; "Nodo0"; "Nodo1";}
+}

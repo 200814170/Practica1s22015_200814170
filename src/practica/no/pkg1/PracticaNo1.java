@@ -15,11 +15,11 @@ public class PracticaNo1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Carga_Objetos Carga_Objetos = new Carga_Objetos(null, null, 0);
-        //Carga_Objetos.setVisible(true);
+        Carga_Objetos Carga_Objetos = new Carga_Objetos(null, null, 0);
+        Carga_Objetos.setVisible(true);
 
-        Crear_Juego crear_juego = new Crear_Juego();
-        crear_juego.setVisible(true);
+        //Crear_Juego crear_juego = new Crear_Juego();
+        //crear_juego.setVisible(true);
 
         /*Matriz nuevamariz = new Matriz();
         nuevamariz.sampar_matriz("uno", 0);
@@ -45,20 +45,5 @@ public class PracticaNo1 {
         System.out.println("\nMatriz ya modificada");
         nuevamariz.imprimir_matriz();*/
 
-    }
-
-    public static void llenar_matriz(int largo, int ancho) {
-        Matriz nmatriz = new Matriz();
-        nmatriz.sampar_matriz("La raiz de la matriz", 0);
-        for (int i = 0; i < largo - 1; i++) {
-            nmatriz.sampar_matriz("jose " + i, 1);
-        }
-        for (int i = 0; i < ancho - 1; i++) {
-            nmatriz.sampar_matriz("jose " + i, 2);
-            for (int j = 0; j < largo - 1; j++) {
-                nmatriz.sampar_matriz("jose " + j, 3);
-            }
-        }
-        nmatriz.imprimir_matriz();
-    }
+    }    
 }

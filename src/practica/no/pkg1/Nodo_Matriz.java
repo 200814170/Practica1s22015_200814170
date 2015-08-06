@@ -12,12 +12,14 @@ package practica.no.pkg1;
  */
 public class Nodo_Matriz {
     String objeto;
+    int ID;
     Nodo_Matriz derecha;
     Nodo_Matriz izquierda;
     Nodo_Matriz arriba;
     Nodo_Matriz abajo;
-    public Nodo_Matriz (String objeto){
+    public Nodo_Matriz (String objeto, int ID){
         this.objeto = objeto;
+        this.ID = ID;
         derecha = null;
         izquierda  = null;
         arriba = null;
