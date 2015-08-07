@@ -1,9 +1,11 @@
-digraph G{
-Nodo0 [shape=box, label = "Mario
-z"];
+digraph G{ 
+label = "Lista de Objetos";
 
-Nodo1 [shape=box, label = "Castillo
-z"];
+Nodo0 [shape=box,style=filled,color="blue", label = "Tortuga
+a"];
+
+Nodo1 [shape=box,style=filled,color="blue", label = "Goomba
+s"];
 
 Nodo0 -> Nodo1;
 Nodo1 -> Nodo0;

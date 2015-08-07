@@ -108,6 +108,8 @@ public class Crear_Juego extends javax.swing.JFrame {
          Lista_Objetos.sampar_lista("Mario15", "Pared", 59);*/
         //Lista_Objetos.imprimir();
         this.Pane_principal.setBackground(Color.BLUE);
+
+        
         this.llenar_matriz(contador_columnas, contador_filas, "vacio");
 
         this.crear_pane_objetos();
@@ -275,6 +277,8 @@ public class Crear_Juego extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // Graficar Matriz
+        Graficar_Estructuras GE = new Graficar_Estructuras();
+        GE.Grificar_Matriz(this.Matriz_Tablero);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -685,6 +689,7 @@ public class Crear_Juego extends javax.swing.JFrame {
                 contador_ID++;
             }
         }
+        System.out.println("Imprimiendo Matriz desde llenar la matriz\n");
         Matriz_Tablero.imprimir_matriz();
     }
 

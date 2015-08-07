@@ -5,6 +5,10 @@
  */
 package practica.no.pkg1;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+
 /**
  *
  * @author Tony
@@ -18,6 +22,8 @@ public class PracticaNo1 {
         Carga_Objetos Carga_Objetos = new Carga_Objetos(null, null, 0);
         Carga_Objetos.setVisible(true);
 
+        //Graficar_Estructuras GE = new Graficar_Estructuras();
+        //GE.prueba();
         //Crear_Juego crear_juego = new Crear_Juego();
         //crear_juego.setVisible(true);
 
