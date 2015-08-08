@@ -33,8 +33,8 @@ public class Graficar_Estructuras {
                 while (actual1 != null) {
                     A.Guardar_Codigo_GRafo(Arch, "\nNodo"
                             + actual1.ID
-                            + " [shape=box,color=\"blue\", label = \""
-                            + actual1.objeto + "\n"
+                            + " [shape=box,color=\"blue\", label = \"Objeto: "
+                            + actual1.objeto + "\nNombre: "
                             + actual1.nombre + "\"];\n");
                     actual1 = actual1.siguiente;
                 }

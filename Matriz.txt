@@ -12,16 +12,14 @@ label = "Matriz de Juego";
 10 [shape=box,color="white", label = ""];
 11 [shape=box,color="white", label = ""];
 12 [shape=box,color="white", label = ""];
-13 [shape=box,color="white", label = ""];
-14 [shape=box,color="white", label = ""];
 
-Nodo0 [shape=box,color="blue", label = "Tortuga
+Nodo0 [shape=box,color="blue", label = "vacio
 0"];
 Nodo1 [shape=box,color="blue", label = "vacio
 1"];
 Nodo2 [shape=box,color="blue", label = "vacio
 2"];
-Nodo3 [shape=box,color="blue", label = "Castillo
+Nodo3 [shape=box,color="blue", label = "vacio
 3"];
 Nodo4 [shape=box,color="blue", label = "vacio
 4"];
@@ -29,22 +27,13 @@ Nodo5 [shape=box,color="blue", label = "vacio
 5"];
 Nodo6 [shape=box,color="blue", label = "Mario
 6"];
-Nodo7 [shape=box,color="blue", label = "vacio
+Nodo7 [shape=box,color="blue", label = "Castillo
 7"];
-Nodo8 [shape=box,color="blue", label = "vacio
-8"];
-Nodo9 [shape=box,color="blue", label = "vacio
-9"];
-Nodo10 [shape=box,color="blue", label = "vacio
-10"];
-Nodo11 [shape=box,color="blue", label = "vacio
-11"];
 
 {rank = same;"1";"2";"3";"4";}
 {rank = same;"5";"Nodo0";"Nodo1";"Nodo2";"Nodo3";"6";}
 {rank = same;"7";"Nodo4";"Nodo5";"Nodo6";"Nodo7";"8";}
-{rank = same;"9";"Nodo8";"Nodo9";"Nodo10";"Nodo11";"10";}
-{rank = same;"11";"12";"13";"14";}
+{rank = same;"9";"10";"11";"12";}
 
 Nodo0-> Nodo1;
 Nodo1-> Nodo0;
@@ -66,29 +55,11 @@ Nodo7-> Nodo3;
 
 Nodo4-> Nodo5;
 Nodo5-> Nodo4;
-Nodo4-> Nodo8;
-Nodo8-> Nodo4;
 
 Nodo5-> Nodo6;
 Nodo6-> Nodo5;
-Nodo5-> Nodo9;
-Nodo9-> Nodo5;
-
 Nodo6-> Nodo7;
 Nodo7-> Nodo6;
-Nodo6-> Nodo10;
-Nodo10-> Nodo6;
-
-Nodo7-> Nodo11;
-Nodo11-> Nodo7;
-
-Nodo8-> Nodo9;
-Nodo9-> Nodo8;
-
-Nodo9-> Nodo10;
-Nodo10-> Nodo9;
-Nodo10-> Nodo11;
-Nodo11-> Nodo10;
 1->Nodo0[color = red];
 Nodo0->1;
 2->Nodo1[color = red];
@@ -102,25 +73,19 @@ Nodo3->6;
 6->8[color = red];
 8->Nodo7[color = red];
 Nodo7->8;
-8->10[color = red];
-10->Nodo11[color = red];
-Nodo11->10;
 1->5[color = red];
 5->Nodo0[color = red];
 Nodo0->5;
 5->7[color = red];
 7->Nodo4[color = red];
 Nodo4->7;
-7->9[color = red];
-9->Nodo8[color = red];
-Nodo8->9;
-11->Nodo8[color = red];
-Nodo8->11;
-12->Nodo9[color = red];
-Nodo9->12;
-13->Nodo10[color = red];
-Nodo10->13;
-14->Nodo11[color = red];
-Nodo11->14;
+9->Nodo4[color = red];
+Nodo4->9;
+10->Nodo5[color = red];
+Nodo5->10;
+11->Nodo6[color = red];
+Nodo6->11;
+12->Nodo7[color = red];
+Nodo7->12;
 
 }

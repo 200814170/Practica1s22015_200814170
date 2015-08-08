@@ -51,5 +51,39 @@ public class PracticaNo1 {
         System.out.println("\nMatriz ya modificada");
         nuevamariz.imprimir_matriz();*/
 
+        /*Lista_Doble Lista_Objetos = new Lista_Doble();
+         Lista_Objetos.sampar_lista("Mario1", "Suelo", 0);
+         Lista_Objetos.sampar_lista("Mario2", "Pared", 1);
+         Lista_Objetos.sampar_lista("Mario3", "Castillo", 2);
+         Lista_Objetos.sampar_lista("Mario4", "Mario", 3);
+         Lista_Objetos.sampar_lista("Mario5", "Goomba", 4);
+         Lista_Objetos.sampar_lista("Mario6", "Suelo", 5);
+         Lista_Objetos.sampar_lista("Mario7", "Suelo", 6);
+         Lista_Objetos.sampar_lista("Mario8", "Suelo", 7);
+         Lista_Objetos.sampar_lista("Mario9", "Suelo", 8);
+         Lista_Objetos.sampar_lista("Mario10", "Suelo", 9);
+         Lista_Objetos.sampar_lista("Mario11", "Suelo", 10);
+         Lista_Objetos.sampar_lista("Mario12", "Suelo", 11);
+         Lista_Objetos.sampar_lista("Mario13", "Suelo", 12);
+         Lista_Objetos.sampar_lista("Mario14", "Suelo", 13);
+         Lista_Objetos.sampar_lista("Mario15", "Suelo", 14);
+         Lista_Objetos.sampar_lista("Mario1", "Suelo", 15);
+         Lista_Objetos.sampar_lista("Mario2", "Suelo", 16);
+         Lista_Objetos.sampar_lista("Mario3", "Tortuga", 17);
+         Lista_Objetos.sampar_lista("Mario4", "Tortuga", 18);
+         Lista_Objetos.sampar_lista("Mario5", "Tortuga", 19);
+         Lista_Objetos.sampar_lista("Mario6", "Ficha", 20);
+         Lista_Objetos.sampar_lista("Mario7", "Ficha", 21);
+         Lista_Objetos.sampar_lista("Mario8", "Ficha", 22);
+         Lista_Objetos.sampar_lista("Mario9", "Ficha", 23);
+         Lista_Objetos.sampar_lista("Mario10", "Ficha", 24);
+         Lista_Objetos.sampar_lista("Mario11", "Ficha", 25);
+         Lista_Objetos.sampar_lista("Mario12", "Hongo", 26);
+         Lista_Objetos.sampar_lista("Mario13", "Hongo", 27);
+         Lista_Objetos.sampar_lista("Mario14", "Hongo", 28);
+         Lista_Objetos.sampar_lista("Mario15", "Pared", 29);
+         Lista_Objetos.sampar_lista("Mario1", "Mario", 30);
+         
+         Lista_Objetos.ultimo_primero();*/
     }    
 }

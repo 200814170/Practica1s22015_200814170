@@ -109,7 +109,6 @@ public class Crear_Juego extends javax.swing.JFrame {
         //Lista_Objetos.imprimir();
         this.Pane_principal.setBackground(Color.BLUE);
 
-        
         this.llenar_matriz(contador_columnas, contador_filas, "vacio");
 
         this.crear_pane_objetos();
@@ -133,6 +132,9 @@ public class Crear_Juego extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -196,6 +198,33 @@ public class Crear_Juego extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/Eliminar.gif"))); // NOI18N
+        jButton5.setText("Eliminar Fila");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/Eliminar.gif"))); // NOI18N
+        jButton6.setText("Eliminar Columna");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/Eliminar.gif"))); // NOI18N
+        jButton7.setText("Quitar Objeto");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -213,7 +242,10 @@ public class Crear_Juego extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -227,14 +259,19 @@ public class Crear_Juego extends javax.swing.JFrame {
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-                        .addContainerGap())
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -243,24 +280,38 @@ public class Crear_Juego extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // Agregar fila
         contador_filas++;
-        //this.Matriz_Tablero.eliminar_matriz();
         System.out.print("\n\n agregando fila\n");
-        //this.llenar_matriz(contador_columnas, contador_filas, "vacio");
-        this.agregar_fila();
-        this.crear_pane_principal(contador_filas, contador_columnas);
-        SwingUtilities.updateComponentTreeUI(this);
-        Matriz_Tablero.imprimir_matriz();
-
+        if (Matriz_Tablero.raiz != null) {
+            this.agregar_fila();
+            this.crear_pane_principal(contador_filas, contador_columnas);
+            SwingUtilities.updateComponentTreeUI(this);
+            Matriz_Tablero.imprimir_matriz();
+        } else {
+            this.contador_ID = 0;
+            this.llenar_matriz(contador_columnas, contador_filas, "vacio");
+            this.crear_pane_principal(contador_filas, contador_columnas);
+            SwingUtilities.updateComponentTreeUI(this);
+            Matriz_Tablero.imprimir_matriz();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // Agregar Columna
         contador_columnas++;
-        this.crear_pane_principal(contador_filas, contador_columnas);
-        this.Matriz_Tablero.eliminar_matriz();
         System.out.print("\n \n\n agregando columna\n");
-        this.llenar_matriz(contador_columnas, contador_filas, "vacio");
-        SwingUtilities.updateComponentTreeUI(this);
+        if (Matriz_Tablero.raiz != null) {
+            this.agregar_columna();
+            Matriz_Tablero.imprimir_matriz();
+            this.crear_pane_principal(contador_filas, contador_columnas);
+            SwingUtilities.updateComponentTreeUI(this);
+            Matriz_Tablero.imprimir_matriz();
+        } else {
+            this.contador_ID = 0;
+            this.llenar_matriz(contador_columnas, contador_filas, "vacio");
+            this.crear_pane_principal(contador_filas, contador_columnas);
+            SwingUtilities.updateComponentTreeUI(this);
+            Matriz_Tablero.imprimir_matriz();
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -280,6 +331,123 @@ public class Crear_Juego extends javax.swing.JFrame {
         Graficar_Estructuras GE = new Graficar_Estructuras();
         GE.Grificar_Matriz(this.Matriz_Tablero);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // Eliminiar Fila
+        Nodo_Matriz actual = Matriz_Tablero.raiz;
+        int i = 0;
+        while (actual != null) {
+            actual = actual.abajo;
+            i++;
+        }
+
+        String[] forma = new String[i];
+        actual = Matriz_Tablero.raiz;
+
+        i = 0;
+        while (actual != null) {
+            forma[i] = "" + (i + 1);
+            actual = actual.abajo;
+            i++;
+        }
+
+        String fila_eliminar = (String) JOptionPane.showInputDialog(this, "¿Que fila es la que desea Eliminar?", "Eliminacion de Fila", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
+
+        int fe = Integer.parseInt(fila_eliminar);
+        if (Matriz_Tablero.fila_vacia(fe)) {
+            Matriz_Tablero.eliminar_fila(fe);
+            contador_filas--;
+            if (contador_filas != 0) {
+                this.crear_pane_principal(contador_filas, contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                Matriz_Tablero.imprimir_matriz();
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "La fila seleccionada contiene objetos", "Fila con objetos", JOptionPane.WARNING_MESSAGE);
+        }
+
+
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // Eliminiar Columna
+        Nodo_Matriz actual = Matriz_Tablero.raiz;
+        int i = 0;
+        while (actual != null) {
+            actual = actual.izquierda;
+            i++;
+        }
+
+        String[] forma = new String[i];
+        actual = Matriz_Tablero.raiz;
+        i = 0;
+        while (actual != null) {
+            forma[i] = "" + (i + 1);
+            actual = actual.izquierda;
+            i++;
+        }
+
+        String fila_eliminar = (String) JOptionPane.showInputDialog(this, "¿Que fila es la que desea Eliminar?", "Eliminacion de Fila", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
+
+        int fe = Integer.parseInt(fila_eliminar);
+        if (Matriz_Tablero.columna_vacia(fe)) {
+            Matriz_Tablero.eliminar_columna(fe);
+
+            contador_columnas--;
+            if (contador_columnas != 0) {
+                this.crear_pane_principal(contador_filas, contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                Matriz_Tablero.imprimir_matriz();
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "La columna seleccionada contiene objetos", "Columna con objetos", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // Quitar Objetos
+        Nodo_Matriz actual = Matriz_Tablero.raiz;
+        int i = 0;
+        while (actual != null) {
+            actual = actual.izquierda;
+            i++;
+        }
+
+        String[] forma = new String[i];
+        actual = Matriz_Tablero.raiz;
+        i = 0;
+        while (actual != null) {
+            forma[i] = "" + (i + 1);
+            actual = actual.izquierda;
+            i++;
+        }
+
+        actual = Matriz_Tablero.raiz;
+        i = 0;
+        while (actual != null) {
+            actual = actual.abajo;
+            i++;
+        }
+
+        String[] forma1 = new String[i];
+        actual = Matriz_Tablero.raiz;
+        i = 0;
+        while (actual != null) {
+            forma1[i] = "" + (i + 1);
+            actual = actual.abajo;
+            i++;
+        }
+
+        String objeto_fila = (String) JOptionPane.showInputDialog(this, "Seleccione la fila donde quiere quitar el objeto", "Quitar Objetos", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
+        String objeto_columna = (String) JOptionPane.showInputDialog(this, "Seleccione la columna donde quiere quitar el objeto", "Quitar Objeto", JOptionPane.QUESTION_MESSAGE, null, forma1, forma1[0]);
+
+        int ID_modificar = ((Integer.parseInt(objeto_fila) * Integer.parseInt(objeto_columna)) - 1);
+        //JOptionPane.showMessageDialog(this, ID_modificar);
+        Matriz_Tablero.modificar(ID_modificar, "vacio");
+        //Matriz_Tablero.imprimir_matriz();
+        this.crear_pane_principal(contador_filas, contador_columnas);
+        SwingUtilities.updateComponentTreeUI(this);
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -323,6 +491,9 @@ public class Crear_Juego extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
@@ -423,6 +594,7 @@ public class Crear_Juego extends javax.swing.JFrame {
                                     label[donde].setIcon(icono);
                                     Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
                                     Matriz_Tablero.imprimir_matriz();
+                                    objeto_seleccionado = "";
                                 }
                             }
                         }
@@ -500,6 +672,7 @@ public class Crear_Juego extends javax.swing.JFrame {
                                             label[donde].setIcon(icono);
                                             Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
                                             Matriz_Tablero.imprimir_matriz();
+                                            objeto_seleccionado = "";
                                         }
                                     }
                                 }
@@ -555,7 +728,7 @@ public class Crear_Juego extends javax.swing.JFrame {
         int ancho = 200;
 
         this.Pane_objetos.removeAll();
-        this.Pane_objetos.setBorder(BorderFactory.createLineBorder(Color.BLUE));        
+        this.Pane_objetos.setBorder(BorderFactory.createLineBorder(Color.BLUE));
 
         int No_filas = 3;//Integer.parseInt(this.jTextField1.getText());
         int No_columnas = longitud1;//Integer.parseInt(this.jTextField2.getText());
@@ -702,4 +875,13 @@ public class Crear_Juego extends javax.swing.JFrame {
         }
     }
 
+    public void agregar_columna() {
+        Matriz_Tablero.sampar_matriz("vacio", contador_ID, 4);
+        contador_ID++;
+        for (int j = 0; j < contador_filas - 1; j++) {
+            Matriz_Tablero.sampar_matriz("vacio", contador_ID, 5);
+            contador_ID++;
+        }
+        Matriz_Tablero.reacomodar_indices();
+    }
 }

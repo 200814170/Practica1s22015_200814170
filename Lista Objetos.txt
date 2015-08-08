@@ -1,11 +1,11 @@
 digraph G{ 
 label = "Lista de Objetos";
 
-Nodo0 [shape=box,style=filled,color="blue", label = "Tortuga
-a"];
+Nodo0 [shape=box,color="blue", label = "Objeto: Mario
+Nombre: <"];
 
-Nodo1 [shape=box,style=filled,color="blue", label = "Goomba
-s"];
+Nodo1 [shape=box,color="blue", label = "Objeto: Castillo
+Nombre: qw"];
 
 Nodo0 -> Nodo1;
 Nodo1 -> Nodo0;

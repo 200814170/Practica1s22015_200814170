@@ -19,21 +19,22 @@ public class Carga_Objetos extends javax.swing.JFrame {
     public static Lista_Doble Lista_Objetos = new Lista_Doble();
     public String mario_estado = "";
     public String castillo_estado = "";
+    String opcion_seleccionada = "";
     int ID = 0;
 
-    public Carga_Objetos(String mario_estado, String castillo_estado, int ID ) {
+    public Carga_Objetos(String mario_estado, String castillo_estado, int ID) {
         initComponents();
         this.ID = ID;
-        if("creado".equals(mario_estado)){
+        if ("creado".equals(mario_estado)) {
             this.jButton7.setEnabled(false);
             this.mario_estado = mario_estado;
-        }else{
+        } else {
             this.jButton7.setEnabled(true);
         }
-        if("creado".equals(castillo_estado)){
+        if ("creado".equals(castillo_estado)) {
             this.jButton8.setEnabled(false);
             this.castillo_estado = castillo_estado;
-        }else{
+        } else {
             this.jButton8.setEnabled(true);
         }
     }
@@ -479,9 +480,24 @@ public class Carga_Objetos extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // Crear Juego
-        Crear_Juego crear_juego = new Crear_Juego();
-        crear_juego.setVisible(true);
-        this.setVisible(false);
+        if (Lista_Objetos.primero == null) {
+            JOptionPane.showMessageDialog(null, "No existen elementos en la lista de objetos,\nporfavor agrege elementos", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
+        } else if (Lista_Objetos.Buscar_Mario_Castillo("Mario")) {
+            if (Lista_Objetos.Buscar_Mario_Castillo("Castillo")) {
+                String[] forma = {"Como una Cola", "Como una Pila"};
+                opcion_seleccionada = (String) JOptionPane.showInputDialog(this, "¿Cómo desea extraer los objetos de la lista?", "Extraccion de Lista de Objetos", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
+                if(opcion_seleccionada.equals("Como una Pila")){
+                    Lista_Objetos.ultimo_primero();
+                }
+                Crear_Juego crear_juego = new Crear_Juego();
+                crear_juego.setVisible(true);
+                this.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(null, "No ha agregado el Castillo fina en la lista de objetos,\nporfavor agregelo", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No ha agregado al Personaje Principal (Mario) en la lista de objetos,\nporfavor agregelo", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     /**

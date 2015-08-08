@@ -105,4 +105,39 @@ public class Lista_Doble {
         }
         return null;
     }
+    
+    public boolean Buscar_Mario_Castillo(String a){
+        Nodo_Lista actual = primero;
+        while(actual != null){
+            if(actual.objeto.equals(a)){
+                return true;
+            }
+            actual = actual.siguiente;
+        }
+        return false;
+    }
+    
+    public void ultimo_primero(){
+        int i = 0;
+        Lista_Doble temporal = new Lista_Doble();
+        while(primero != null){
+            temporal.sampar_lista(primero.nombre, primero.objeto, i);
+            i++;
+            primero = primero.siguiente;
+        }
+        
+        i = 0;
+        while(temporal.ultimo != null){
+            this.sampar_lista(temporal.ultimo.nombre, temporal.ultimo.objeto, i);
+            i++;
+            temporal.ultimo = temporal.ultimo.anterior;
+        }
+        temporal.primero = null;
+        System.gc();
+        
+        System.out.println("Lista");
+        this.imprimir();
+        System.out.println("Lista temporal");
+        temporal.imprimir();
+    }
 }
