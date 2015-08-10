@@ -480,6 +480,7 @@ public class Carga_Objetos extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // Crear Juego
+        String temp = "";
         if (Lista_Objetos.primero == null) {
             JOptionPane.showMessageDialog(null, "No existen elementos en la lista de objetos,\nporfavor agrege elementos", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
         } else if (Lista_Objetos.Buscar_Mario_Castillo("Mario")) {
@@ -488,8 +489,12 @@ public class Carga_Objetos extends javax.swing.JFrame {
                 opcion_seleccionada = (String) JOptionPane.showInputDialog(this, "¿Cómo desea extraer los objetos de la lista?", "Extraccion de Lista de Objetos", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
                 if(opcion_seleccionada.equals("Como una Pila")){
                     Lista_Objetos.ultimo_primero();
+                    temp = "Como una Pila.";
+                }else{
+                    temp = "Como una Cola.";
                 }
                 Crear_Juego crear_juego = new Crear_Juego();
+                crear_juego.jLabel2.setText(temp);
                 crear_juego.setVisible(true);
                 this.setVisible(false);
             } else {

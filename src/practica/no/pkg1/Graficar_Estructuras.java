@@ -267,44 +267,44 @@ public class Graficar_Estructuras {
             int contador2 = 1;
             while (actual_fila != null) {
                 if (actual_fila.izquierda != null) {
-                    A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = red];\n");
+                    A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = white];\n");
                     A.Guardar_Codigo_GRafo(Arch, "Nodo" + actual_fila.ID + "->" + contador2 + ";\n");
                     contador2++;
                     actual_fila = actual_fila.izquierda;
                 } else {
-                    A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = red];\n");
+                    A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = white];\n");
                     A.Guardar_Codigo_GRafo(Arch, "Nodo" + actual_fila.ID + "->" + contador2 + ";\n");
                     contador2++;
                     int contador3 = contador2 + 1;
                     while (actual_fila != null) {
-                        A.Guardar_Codigo_GRafo(Arch, contador3 + "->Nodo" + actual_fila.ID + "[color = red];\n");
+                        A.Guardar_Codigo_GRafo(Arch, contador3 + "->Nodo" + actual_fila.ID + "[color = white];\n");
                         A.Guardar_Codigo_GRafo(Arch, "Nodo" + actual_fila.ID + "->" + contador3 + ";\n");
                         actual_fila = actual_fila.abajo;
                         if (actual_fila != null) {
                             A.Guardar_Codigo_GRafo(Arch, contador3 + "->");
                             contador3 = contador3 + 2;
-                            A.Guardar_Codigo_GRafo(Arch, contador3 + "[color = red];\n");
+                            A.Guardar_Codigo_GRafo(Arch, contador3 + "[color = white];\n");
                         }
                     }
                 }
             }
 
-            A.Guardar_Codigo_GRafo(Arch, "1->" + contador2 + "[color = red];\n");
+            A.Guardar_Codigo_GRafo(Arch, "1->" + contador2 + "[color = white];\n");
 
             actual_fila = tablero.raiz;
             while (actual_fila != null) {
-                A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = red];\n");
+                A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_fila.ID + "[color = white];\n");
                 A.Guardar_Codigo_GRafo(Arch, "Nodo" + actual_fila.ID + "->" + contador2 + ";\n");
                 actual_columna = actual_fila;
                 actual_fila = actual_fila.abajo;
                 if (actual_fila != null) {
                     A.Guardar_Codigo_GRafo(Arch, contador2 + "->");
                     contador2 = contador2 + 2;
-                    A.Guardar_Codigo_GRafo(Arch, contador2 + "[color = red];\n");
+                    A.Guardar_Codigo_GRafo(Arch, contador2 + "[color = white];\n");
                 } else {
                     contador2 = contador2 + 2;
                     while (actual_columna != null) {
-                        A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_columna.ID + "[color = red];\n");
+                        A.Guardar_Codigo_GRafo(Arch, contador2 + "->Nodo" + actual_columna.ID + "[color = white];\n");
                         A.Guardar_Codigo_GRafo(Arch, "Nodo" + actual_columna.ID + "->" + contador2 + ";\n");
                         contador2++;
                         actual_columna = actual_columna.izquierda;

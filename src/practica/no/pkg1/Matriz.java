@@ -142,6 +142,22 @@ public class Matriz {
         }
     }
 
+    public String nodo_objeto(int donde) {
+        Nodo_Matriz actual_columna = raiz;
+        while (actual_columna != null) {
+            Nodo_Matriz actual_fila = actual_columna;
+            while (actual_fila != null) {
+                if (actual_fila.ID == donde) {
+                    System.out.println("\nEncontrado: " + actual_fila.objeto);
+                    return actual_fila.objeto;
+                }
+                actual_fila = actual_fila.izquierda;
+            }
+            actual_columna = actual_columna.abajo;
+        }
+        return null;
+    }
+
     public void eliminar_matriz() {
         raiz = null;
         primero_fila = null;

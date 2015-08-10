@@ -29,6 +29,17 @@ public class Lista_Doble {
         }
     }
 
+    public void sampar_al_inicio(String nombre, String objeto, int ID) {
+        Nodo_Lista nuevo_nodo = new Nodo_Lista(nombre, objeto, ID);
+        if (primero != null) {
+            primero.anterior = nuevo_nodo;
+            nuevo_nodo.siguiente = primero;
+            primero = nuevo_nodo;
+        }else{
+            sampar_lista(nombre, objeto, ID);
+        }
+    }
+
     public void imprimir() {
         Nodo_Lista actual = primero;
         while (actual != null) {
@@ -71,8 +82,8 @@ public class Lista_Doble {
             actual = actual.siguiente;
         }
     }
-    
-    public void modificar(Lista_Doble Lis, int ID, String nombre){
+
+    public void modificar(Lista_Doble Lis, int ID, String nombre) {
         Nodo_Lista temp = Lis.primero;
         while (temp != null) {
             if (temp.ID == ID) {
@@ -97,7 +108,7 @@ public class Lista_Doble {
         Nodo_Lista temp = Lis.primero;
         String encontro = "";
         while (temp != null) {
-            if (temp.ID == ID) {                
+            if (temp.ID == ID) {
                 encontro = temp.objeto;
                 return encontro;
             }
@@ -105,36 +116,36 @@ public class Lista_Doble {
         }
         return null;
     }
-    
-    public boolean Buscar_Mario_Castillo(String a){
+
+    public boolean Buscar_Mario_Castillo(String a) {
         Nodo_Lista actual = primero;
-        while(actual != null){
-            if(actual.objeto.equals(a)){
+        while (actual != null) {
+            if (actual.objeto.equals(a)) {
                 return true;
             }
             actual = actual.siguiente;
         }
         return false;
     }
-    
-    public void ultimo_primero(){
+
+    public void ultimo_primero() {
         int i = 0;
         Lista_Doble temporal = new Lista_Doble();
-        while(primero != null){
+        while (primero != null) {
             temporal.sampar_lista(primero.nombre, primero.objeto, i);
             i++;
             primero = primero.siguiente;
         }
-        
+
         i = 0;
-        while(temporal.ultimo != null){
+        while (temporal.ultimo != null) {
             this.sampar_lista(temporal.ultimo.nombre, temporal.ultimo.objeto, i);
             i++;
             temporal.ultimo = temporal.ultimo.anterior;
         }
         temporal.primero = null;
         System.gc();
-        
+
         System.out.println("Lista");
         this.imprimir();
         System.out.println("Lista temporal");

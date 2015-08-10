@@ -31,8 +31,8 @@ public class Crear_Juego extends javax.swing.JFrame {
      */
     int longitud = 0;
     int longitud1 = 0;
-    int contador_filas = 2;
-    int contador_columnas = 4;
+    public int contador_filas = 2;
+    public int contador_columnas = 4;
     int donde = 0;
     int conta_celdas;
     int conta_columnas;
@@ -46,73 +46,13 @@ public class Crear_Juego extends javax.swing.JFrame {
     public Crear_Juego() {
         initComponents();
 
-        /*Lista_Objetos.sampar_lista("Mario1", "Suelo", 0);
-         Lista_Objetos.sampar_lista("Mario2", "Pared", 1);
-         Lista_Objetos.sampar_lista("Mario3", "Castillo", 2);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 3);
-         Lista_Objetos.sampar_lista("Mario5", "Goomba", 4);
-         Lista_Objetos.sampar_lista("Mario6", "Suelo", 5);
-         Lista_Objetos.sampar_lista("Mario7", "Suelo", 6);
-         Lista_Objetos.sampar_lista("Mario8", "Suelo", 7);
-         Lista_Objetos.sampar_lista("Mario9", "Suelo", 8);
-         Lista_Objetos.sampar_lista("Mario10", "Suelo", 9);
-         Lista_Objetos.sampar_lista("Mario11", "Suelo", 10);
-         Lista_Objetos.sampar_lista("Mario12", "Suelo", 11);
-         Lista_Objetos.sampar_lista("Mario13", "Suelo", 12);
-         Lista_Objetos.sampar_lista("Mario14", "Suelo", 13);
-         Lista_Objetos.sampar_lista("Mario15", "Suelo", 14);
-         Lista_Objetos.sampar_lista("Mario1", "Suelo", 15);
-         Lista_Objetos.sampar_lista("Mario2", "Suelo", 16);
-         Lista_Objetos.sampar_lista("Mario3", "Tortuga", 17);
-         Lista_Objetos.sampar_lista("Mario4", "Tortuga", 18);
-         Lista_Objetos.sampar_lista("Mario5", "Tortuga", 19);
-         Lista_Objetos.sampar_lista("Mario6", "Ficha", 20);
-         Lista_Objetos.sampar_lista("Mario7", "Ficha", 21);
-         Lista_Objetos.sampar_lista("Mario8", "Ficha", 22);
-         Lista_Objetos.sampar_lista("Mario9", "Ficha", 23);
-         Lista_Objetos.sampar_lista("Mario10", "Ficha", 24);
-         Lista_Objetos.sampar_lista("Mario11", "Ficha", 25);
-         Lista_Objetos.sampar_lista("Mario12", "Hongo", 26);
-         Lista_Objetos.sampar_lista("Mario13", "Hongo", 27);
-         Lista_Objetos.sampar_lista("Mario14", "Hongo", 28);
-         Lista_Objetos.sampar_lista("Mario15", "Pared", 29);
-         Lista_Objetos.sampar_lista("Mario1", "Mario", 30);
-         Lista_Objetos.sampar_lista("Mario2", "Mario", 31);
-         Lista_Objetos.sampar_lista("Mario3", "Mario", 32);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 33);
-         Lista_Objetos.sampar_lista("Mario5", "Mario", 34);
-         Lista_Objetos.sampar_lista("Mario6", "Mario", 35);
-         Lista_Objetos.sampar_lista("Mario7", "Mario", 36);
-         Lista_Objetos.sampar_lista("Mario8", "Mario", 37);
-         Lista_Objetos.sampar_lista("Mario9", "Mario", 38);
-         Lista_Objetos.sampar_lista("Mario10", "Mario", 39);
-         Lista_Objetos.sampar_lista("Mario11", "Mario", 40);
-         Lista_Objetos.sampar_lista("Mario12", "Mario", 41);
-         Lista_Objetos.sampar_lista("Mario13", "Mario", 42);
-         Lista_Objetos.sampar_lista("Mario14", "Mario", 43);
-         Lista_Objetos.sampar_lista("Mario15", "Mario", 44);
-         Lista_Objetos.sampar_lista("Mario1", "Mario", 45);
-         Lista_Objetos.sampar_lista("Mario2", "Mario", 46);
-         Lista_Objetos.sampar_lista("Mario3", "Mario", 47);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 48);
-         Lista_Objetos.sampar_lista("Mario5", "Mario", 49);
-         Lista_Objetos.sampar_lista("Mario6", "Mario", 50);
-         Lista_Objetos.sampar_lista("Mario7", "Mario", 51);
-         Lista_Objetos.sampar_lista("Mario8", "Mario", 52);
-         Lista_Objetos.sampar_lista("Mario9", "Mario", 53);
-         Lista_Objetos.sampar_lista("Mario10", "Mario", 54);
-         Lista_Objetos.sampar_lista("Mario11", "Mario", 55);
-         Lista_Objetos.sampar_lista("Mario12", "Mario", 56);
-         Lista_Objetos.sampar_lista("Mario13", "Mario", 57);
-         Lista_Objetos.sampar_lista("Mario14", "Mario", 58);
-         Lista_Objetos.sampar_lista("Mario15", "Pared", 59);*/
-        //Lista_Objetos.imprimir();
         this.Pane_principal.setBackground(Color.BLUE);
 
         this.llenar_matriz(contador_columnas, contador_filas, "vacio");
 
         this.crear_pane_objetos();
         this.crear_pane_principal(contador_filas, contador_columnas);
+        SwingUtilities.updateComponentTreeUI(this);
 
     }
 
@@ -135,6 +75,11 @@ public class Crear_Juego extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -153,7 +98,7 @@ public class Crear_Juego extends javax.swing.JFrame {
         Pane_principal.setLayout(Pane_principalLayout);
         Pane_principalLayout.setHorizontalGroup(
             Pane_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 898, Short.MAX_VALUE)
+            .addGap(0, 913, Short.MAX_VALUE)
         );
         Pane_principalLayout.setVerticalGroup(
             Pane_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,41 +170,92 @@ public class Crear_Juego extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/play.jpg"))); // NOI18N
+        jButton8.setText("Iniciar Juego");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jButton9.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/resumen.png"))); // NOI18N
+        jButton9.setText("Resumen de Objetos");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jLabel3.setText("Objeto Seleccionado:");
+
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jLabel2.setText(":");
+
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        jLabel1.setText("Forma de Extracion de Objetos:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 915, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Pane_objetos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
+                        .addComponent(Pane_objetos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.LEADING))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Pane_objetos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(Pane_objetos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -270,7 +266,11 @@ public class Crear_Juego extends javax.swing.JFrame {
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 11, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -318,11 +318,13 @@ public class Crear_Juego extends javax.swing.JFrame {
         // Graficar Lista
         Graficar_Estructuras GE = new Graficar_Estructuras();
         GE.Grificar_Lista_Doble();
-        try {
-            File objetofile = new File("Lista Objetos.jpg");
-            Desktop.getDesktop().open(objetofile);
-        } catch (IOException ex) {
-            System.out.println(ex);
+        if (carga_objetos.Lista_Objetos.primero != null) {
+            try {
+                File objetofile = new File("Lista Objetos.jpg");
+                Desktop.getDesktop().open(objetofile);
+            } catch (IOException ex) {
+                System.out.println(ex);
+            }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -330,6 +332,12 @@ public class Crear_Juego extends javax.swing.JFrame {
         // Graficar Matriz
         Graficar_Estructuras GE = new Graficar_Estructuras();
         GE.Grificar_Matriz(this.Matriz_Tablero);
+        try {
+            File objetofile = new File("Matriz.jpg");
+            Desktop.getDesktop().open(objetofile);
+        } catch (IOException ex) {
+            System.out.println(ex);
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -408,10 +416,12 @@ public class Crear_Juego extends javax.swing.JFrame {
         // Quitar Objetos
         Nodo_Matriz actual = Matriz_Tablero.raiz;
         int i = 0;
+        int cuantas_columnas = 0;
         while (actual != null) {
             actual = actual.izquierda;
             i++;
         }
+        cuantas_columnas = i;
 
         String[] forma = new String[i];
         actual = Matriz_Tablero.raiz;
@@ -438,16 +448,75 @@ public class Crear_Juego extends javax.swing.JFrame {
             i++;
         }
 
-        String objeto_fila = (String) JOptionPane.showInputDialog(this, "Seleccione la fila donde quiere quitar el objeto", "Quitar Objetos", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
-        String objeto_columna = (String) JOptionPane.showInputDialog(this, "Seleccione la columna donde quiere quitar el objeto", "Quitar Objeto", JOptionPane.QUESTION_MESSAGE, null, forma1, forma1[0]);
+        String objeto_fila = (String) JOptionPane.showInputDialog(this, "Seleccione la columna donde quiere quitar el objeto", "Quitar Objetos", JOptionPane.QUESTION_MESSAGE, null, forma, forma[0]);
+        String objeto_columna = (String) JOptionPane.showInputDialog(this, "Seleccione la fila donde quiere quitar el objeto", "Quitar Objeto", JOptionPane.QUESTION_MESSAGE, null, forma1, forma1[0]);
 
-        int ID_modificar = ((Integer.parseInt(objeto_fila) * Integer.parseInt(objeto_columna)) - 1);
-        //JOptionPane.showMessageDialog(this, ID_modificar);
-        Matriz_Tablero.modificar(ID_modificar, "vacio");
-        //Matriz_Tablero.imprimir_matriz();
-        this.crear_pane_principal(contador_filas, contador_columnas);
-        SwingUtilities.updateComponentTreeUI(this);
+        int ID_modificar = ((Integer.parseInt(objeto_fila)) + (cuantas_columnas * (Integer.parseInt(objeto_columna) - 1)) - 1);
+        //JOptionPane.showMessageDialog(this, "( ( " + objeto_fila + ") + ( " + cuantas_columnas + " * ( " + objeto_columna + " - 1 ) - 1 ) = " + ID_modificar);
+        if (Matriz_Tablero.nodo_objeto(ID_modificar).equals("vacio")) {
+            JOptionPane.showMessageDialog(null, "El nodo seleccionado esta vacio.");
+        } else {
+            if (this.jLabel2.getText().equals("Como una Pila.")) {
+                carga_objetos.Lista_Objetos.sampar_al_inicio("Agregado", Matriz_Tablero.nodo_objeto(ID_modificar), 0);
+            } else {
+                carga_objetos.Lista_Objetos.sampar_lista("Agregado", Matriz_Tablero.nodo_objeto(ID_modificar), 0);
+            }
+            carga_objetos.Lista_Objetos.reacomodar_indices(carga_objetos.Lista_Objetos);
+            this.crear_pane_objetos();
+            Matriz_Tablero.modificar(ID_modificar, "vacio");
+            //Matriz_Tablero.imprimir_matriz();
+            this.crear_pane_principal(contador_filas, contador_columnas);
+            SwingUtilities.updateComponentTreeUI(this);
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // Iniciar Juego
+        Juego juego = new Juego(contador_filas, contador_columnas);
+        juego.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // Resumen de Objetos
+        int conta_suelo = 0;
+        int conta_pared = 0;
+        int conta_goomba = 0;
+        int conta_mario = 0;
+        int conta_tortuga = 0;
+        int conta_ficha = 0;
+        int conta_hongo = 0;
+        int conta_castillo = 0;
+        Nodo_Lista ob = this.carga_objetos.Lista_Objetos.primero;
+        while (ob != null) {
+            if (ob.objeto.equals("Pared")) {
+                conta_pared++;
+            } else if (ob.objeto.equals("Suelo")) {
+                conta_suelo++;
+            } else if (ob.objeto.equals("Goomba")) {
+                conta_goomba++;
+            } else if (ob.objeto.equals("Mario")) {
+                conta_mario++;
+            } else if (ob.objeto.equals("Tortuga")) {
+                conta_tortuga++;
+            } else if (ob.objeto.equals("Ficha")) {
+                conta_ficha++;
+            } else if (ob.objeto.equals("Hongo")) {
+                conta_hongo++;
+            } else if (ob.objeto.equals("Castillo")) {
+                conta_castillo++;
+            }
+            ob = ob.siguiente;
+        }
+        JOptionPane.showMessageDialog(this, "Pared: " + conta_pared + "\n"
+                + "Suelo: " + conta_suelo + "\n"
+                + "Goomba: " + conta_goomba + "\n"
+                + "Personaje Princial (Mario): " + conta_mario + "\n"
+                + "Koopa (Tortuga): " + conta_tortuga + "\n"
+                + "Ficha: " + conta_ficha + "\n"
+                + "Hongo de vida: " + conta_hongo + "\n"
+                + "Castillo: " + conta_castillo + "\n");
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -494,6 +563,11 @@ public class Crear_Juego extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
@@ -586,15 +660,20 @@ public class Crear_Juego extends javax.swing.JFrame {
                                     donde = i;
                                     conta_celdas = i;
                                     //JOptionPane.showMessageDialog(null, "Contador celdas: " + conta_celdas);
-                                    ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
-                                    Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
-                                    label[donde].removeAll();
-                                    label[donde].setIcon(icono);
-                                    label[donde].repaint();
-                                    label[donde].setIcon(icono);
-                                    Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
-                                    Matriz_Tablero.imprimir_matriz();
-                                    objeto_seleccionado = "";
+                                    if (Matriz_Tablero.nodo_objeto(donde).equals("vacio")) {
+                                        ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
+                                        Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
+                                        label[donde].removeAll();
+                                        label[donde].setIcon(icono);
+                                        label[donde].repaint();
+                                        label[donde].setIcon(icono);
+                                        Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
+                                        Matriz_Tablero.imprimir_matriz();
+                                        objeto_seleccionado = "";
+                                        enviar_texto(objeto_seleccionado);
+                                    } else {
+                                        JOptionPane.showMessageDialog(null, "El nodo seleccionado no esta vacio.");
+                                    }
                                 }
                             }
                         }
@@ -664,15 +743,20 @@ public class Crear_Juego extends javax.swing.JFrame {
                                             donde = i;
                                             conta_celdas = i;
                                             //JOptionPane.showMessageDialog(null, "Contador celdas: " + conta_celdas + " Contador columnas: " + conta_columnas);
-                                            ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
-                                            Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
-                                            label[donde].removeAll();
-                                            label[donde].setIcon(icono);
-                                            label[donde].repaint();
-                                            label[donde].setIcon(icono);
-                                            Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
-                                            Matriz_Tablero.imprimir_matriz();
-                                            objeto_seleccionado = "";
+                                            if (Matriz_Tablero.nodo_objeto(donde).equals("vacio")) {
+                                                ImageIcon img = new ImageIcon(cual_objeto(objeto_seleccionado));
+                                                Icon icono = new ImageIcon(img.getImage().getScaledInstance(70, 70, Image.SCALE_DEFAULT));
+                                                label[donde].removeAll();
+                                                label[donde].setIcon(icono);
+                                                label[donde].repaint();
+                                                label[donde].setIcon(icono);
+                                                Matriz_Tablero.modificar(conta_celdas, objeto_seleccionado);
+                                                Matriz_Tablero.imprimir_matriz();
+                                                objeto_seleccionado = "";
+                                                enviar_texto(objeto_seleccionado);
+                                            } else {
+                                                JOptionPane.showMessageDialog(null, "El nodo no esta vacio.");
+                                            }
                                         }
                                     }
                                 }
@@ -779,6 +863,7 @@ public class Crear_Juego extends javax.swing.JFrame {
                     @Override
                     public void mouseClicked(MouseEvent me) {
                         objeto_seleccionado = carga_objetos.Lista_Objetos.primero.objeto;
+                        enviar_texto(objeto_seleccionado);
                         carga_objetos.Lista_Objetos.eliminar_lista(carga_objetos.Lista_Objetos, 0);
                         crear_pane_objetos();
                         //Crear_Juego CJ = new Crear_Juego();
@@ -883,5 +968,9 @@ public class Crear_Juego extends javax.swing.JFrame {
             contador_ID++;
         }
         Matriz_Tablero.reacomodar_indices();
+    }
+
+    public void enviar_texto(String texto) {
+        this.jLabel3.setText("Objeto Seleccionado: " + texto);
     }
 }
