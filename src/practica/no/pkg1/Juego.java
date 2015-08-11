@@ -8,7 +8,11 @@ package practica.no.pkg1;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Dimension;
+import java.awt.Event;
 import java.awt.Image;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -38,12 +42,20 @@ public class Juego extends javax.swing.JFrame {
     int conta_celdas;
     int conta_columnas;
     int contador_ID = 0;
+    int donde_mario = 0;
+    int puntos = 0;
+    int vidas = 1;
+
     String objeto_seleccionado = "";
     String crono;
     Carga_Objetos carga_objetos = new Carga_Objetos(null, null, 0);
     Matriz Matriz_Tablero_Juego = new Matriz();
-    boolean suspendido = false;
+    Matriz Matriz_inicial = new Matriz();
+    boolean Pausa = false;
+    boolean jugar = false;
 
+    javax.swing.JLabel[] label;
+    int contador_Lista = 0;
     String hora = "00", min = "00", seg = "00";
     int horas = 0, minutos = 0, segundos = 0, ds = 0;
     Thread cronometro = new Thread() {//declaramos el hilo
@@ -91,78 +103,39 @@ public class Juego extends javax.swing.JFrame {
         }
     };
 
-    public Juego(int contador_filas, int contador_columnas) {
+    public Juego(int contador_filas, int contador_columnas, Matriz Matriz) {
         initComponents();
-
-        /*Lista_Objetos.sampar_lista("Mario1", "Suelo", 0);
-         Lista_Objetos.sampar_lista("Mario2", "Pared", 1);
-         Lista_Objetos.sampar_lista("Mario3", "Castillo", 2);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 3);
-         Lista_Objetos.sampar_lista("Mario5", "Goomba", 4);
-         Lista_Objetos.sampar_lista("Mario6", "Suelo", 5);
-         Lista_Objetos.sampar_lista("Mario7", "Suelo", 6);
-         Lista_Objetos.sampar_lista("Mario8", "Suelo", 7);
-         Lista_Objetos.sampar_lista("Mario9", "Suelo", 8);
-         Lista_Objetos.sampar_lista("Mario10", "Suelo", 9);
-         Lista_Objetos.sampar_lista("Mario11", "Suelo", 10);
-         Lista_Objetos.sampar_lista("Mario12", "Suelo", 11);
-         Lista_Objetos.sampar_lista("Mario13", "Suelo", 12);
-         Lista_Objetos.sampar_lista("Mario14", "Suelo", 13);
-         Lista_Objetos.sampar_lista("Mario15", "Suelo", 14);
-         Lista_Objetos.sampar_lista("Mario1", "Suelo", 15);
-         Lista_Objetos.sampar_lista("Mario2", "Suelo", 16);
-         Lista_Objetos.sampar_lista("Mario3", "Tortuga", 17);
-         Lista_Objetos.sampar_lista("Mario4", "Tortuga", 18);
-         Lista_Objetos.sampar_lista("Mario5", "Tortuga", 19);
-         Lista_Objetos.sampar_lista("Mario6", "Ficha", 20);
-         Lista_Objetos.sampar_lista("Mario7", "Ficha", 21);
-         Lista_Objetos.sampar_lista("Mario8", "Ficha", 22);
-         Lista_Objetos.sampar_lista("Mario9", "Ficha", 23);
-         Lista_Objetos.sampar_lista("Mario10", "Ficha", 24);
-         Lista_Objetos.sampar_lista("Mario11", "Ficha", 25);
-         Lista_Objetos.sampar_lista("Mario12", "Hongo", 26);
-         Lista_Objetos.sampar_lista("Mario13", "Hongo", 27);
-         Lista_Objetos.sampar_lista("Mario14", "Hongo", 28);
-         Lista_Objetos.sampar_lista("Mario15", "Pared", 29);
-         Lista_Objetos.sampar_lista("Mario1", "Mario", 30);
-         Lista_Objetos.sampar_lista("Mario2", "Mario", 31);
-         Lista_Objetos.sampar_lista("Mario3", "Mario", 32);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 33);
-         Lista_Objetos.sampar_lista("Mario5", "Mario", 34);
-         Lista_Objetos.sampar_lista("Mario6", "Mario", 35);
-         Lista_Objetos.sampar_lista("Mario7", "Mario", 36);
-         Lista_Objetos.sampar_lista("Mario8", "Mario", 37);
-         Lista_Objetos.sampar_lista("Mario9", "Mario", 38);
-         Lista_Objetos.sampar_lista("Mario10", "Mario", 39);
-         Lista_Objetos.sampar_lista("Mario11", "Mario", 40);
-         Lista_Objetos.sampar_lista("Mario12", "Mario", 41);
-         Lista_Objetos.sampar_lista("Mario13", "Mario", 42);
-         Lista_Objetos.sampar_lista("Mario14", "Mario", 43);
-         Lista_Objetos.sampar_lista("Mario15", "Mario", 44);
-         Lista_Objetos.sampar_lista("Mario1", "Mario", 45);
-         Lista_Objetos.sampar_lista("Mario2", "Mario", 46);
-         Lista_Objetos.sampar_lista("Mario3", "Mario", 47);
-         Lista_Objetos.sampar_lista("Mario4", "Mario", 48);
-         Lista_Objetos.sampar_lista("Mario5", "Mario", 49);
-         Lista_Objetos.sampar_lista("Mario6", "Mario", 50);
-         Lista_Objetos.sampar_lista("Mario7", "Mario", 51);
-         Lista_Objetos.sampar_lista("Mario8", "Mario", 52);
-         Lista_Objetos.sampar_lista("Mario9", "Mario", 53);
-         Lista_Objetos.sampar_lista("Mario10", "Mario", 54);
-         Lista_Objetos.sampar_lista("Mario11", "Mario", 55);
-         Lista_Objetos.sampar_lista("Mario12", "Mario", 56);
-         Lista_Objetos.sampar_lista("Mario13", "Mario", 57);
-         Lista_Objetos.sampar_lista("Mario14", "Mario", 58);
-         Lista_Objetos.sampar_lista("Mario15", "Pared", 59);*/
-        //Lista_Objetos.imprimir();
-
         this.jButton2.setEnabled(false);
         this.jButton5.setEnabled(false);
         this.contador_filas = contador_filas;
         this.contador_columnas = contador_columnas;
-        System.out.println("Imprimiendo la matriz final ");
-        this.Matriz_Tablero_Juego.raiz = crear_juego.Matriz_Tablero.raiz;
-        this.Matriz_Tablero_Juego.imprimir_matriz();
+        contador_Lista = contador_filas * contador_columnas;
+        label = new javax.swing.JLabel[contador_Lista];
+        this.jLabel3.setText("0" + puntos);
+        this.jLabel5.setText("0" + vidas);
+
+        Nodo_Matriz actual_Matriz1 = Matriz.raiz;
+        Nodo_Matriz actual_Matriz2;
+
+        Matriz_inicial.sampar_matriz(actual_Matriz1.objeto, 1, 0);
+        actual_Matriz2 = actual_Matriz1.izquierda;
+        while (actual_Matriz2 != null) {
+            Matriz_inicial.sampar_matriz(actual_Matriz2.objeto, 1, 1);
+            actual_Matriz2 = actual_Matriz2.izquierda;
+        }
+
+        actual_Matriz1 = Matriz.raiz.abajo;
+        while (actual_Matriz1 != null) {
+            Matriz_inicial.sampar_matriz(actual_Matriz1.objeto, 1, 2);
+            actual_Matriz2 = actual_Matriz1.izquierda;
+            while (actual_Matriz2 != null) {
+                Matriz_inicial.sampar_matriz(actual_Matriz2.objeto, 1, 3);
+                actual_Matriz2 = actual_Matriz2.izquierda;
+            }
+            actual_Matriz1 = actual_Matriz1.abajo;
+        }
+
+        this.Matriz_Tablero_Juego.raiz = Matriz.raiz;
         this.Pane_principal.setBackground(Color.BLUE);
 
         this.crear_pane_principal(this.contador_filas, this.contador_columnas);
@@ -201,7 +174,7 @@ public class Juego extends javax.swing.JFrame {
         );
         Pane_principalLayout.setVerticalGroup(
             Pane_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 472, Short.MAX_VALUE)
         );
 
         jScrollPane1.setViewportView(Pane_principal);
@@ -214,6 +187,11 @@ public class Juego extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/pause.jpg"))); // NOI18N
@@ -221,6 +199,11 @@ public class Juego extends javax.swing.JFrame {
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton2KeyPressed(evt);
             }
         });
 
@@ -232,6 +215,11 @@ public class Juego extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        jButton4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton4KeyPressed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practica/no/pkg1/Imagenes/Eliminar.gif"))); // NOI18N
@@ -239,6 +227,11 @@ public class Juego extends javax.swing.JFrame {
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
+            }
+        });
+        jButton5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton5KeyPressed(evt);
             }
         });
 
@@ -264,8 +257,10 @@ public class Juego extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 916, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton4)
+                                .addGap(107, 107, 107))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -273,19 +268,21 @@ public class Juego extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
                                 .addGap(280, 280, 280)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35))))
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(25, 25, 25))))
+                    .addComponent(jScrollPane1))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -318,9 +315,10 @@ public class Juego extends javax.swing.JFrame {
         this.jButton1.setEnabled(false);
         this.jButton2.setEnabled(true);
         this.jButton5.setEnabled(true);
-        if (this.suspendido) {
+        jugar = true;
+        if (this.Pausa) {
             cronometro.resume();
-            suspendido = false;
+            Pausa = false;
         } else {
             cronometro.start();
         }
@@ -329,7 +327,8 @@ public class Juego extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // Pausar
         cronometro.suspend();
-        suspendido = true;
+        jugar = false;
+        Pausa = true;
         this.jButton1.setEnabled(true);
         this.jButton2.setEnabled(true);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -351,11 +350,109 @@ public class Juego extends javax.swing.JFrame {
         cronometro.suspend();//se suspende el hilo.. (NO utilizamos hilo.stop() porque si lo usamos, el hilo se "muere")
         ds = segundos = minutos = horas = 0;
         hora_label("00", "00", "00");
-        suspendido = true;
+        Pausa = true;
+        jugar = false;
         this.jButton1.setEnabled(true);
         this.jButton2.setEnabled(false);
         this.jButton5.setEnabled(false);
+
+        System.out.println("Matriz");
+        this.Matriz_Tablero_Juego.imprimir_matriz();
+        this.Matriz_Tablero_Juego.eliminar_matriz();
+
+        System.out.println("Matriz Original");
+        this.Matriz_Tablero_Juego.imprimir_matriz();
+        
+        Juego juegooooo2 = new Juego(contador_filas, contador_columnas, Matriz_inicial);
+        juegooooo2.setVisible(true);
+        this.cerrar();
+//        this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+//        SwingUtilities.updateComponentTreeUI(this);
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        // TODO add your handling code here:
+        if (this.jugar == true) {
+            if (evt.getKeyCode() == 39) {//izquierda
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(39);
+            }
+            if (evt.getKeyCode() == 37) {//derecha
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(37);
+            }
+            if (evt.getKeyCode() == 38) {//arriba
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(38);
+            }
+            if (evt.getKeyCode() == 40) {//abajo
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+            }
+        }
+    }//GEN-LAST:event_jButton1KeyPressed
+
+    private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
+        // TODO add your handling code here:
+        if (this.jugar == true) {
+            if (evt.getKeyCode() == 39) {//izquierda
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(39);
+            }
+            if (evt.getKeyCode() == 37) {//derecha
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(37);
+            }
+            if (evt.getKeyCode() == 38) {//arriba
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(38);
+            }
+            if (evt.getKeyCode() == 40) {//abajo
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+            }
+        }
+    }//GEN-LAST:event_jButton2KeyPressed
+
+    private void jButton5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton5KeyPressed
+        // TODO add your handling code here:
+        if (this.jugar == true) {
+            if (evt.getKeyCode() == 39) {//izquierda
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(39);
+            }
+            if (evt.getKeyCode() == 37) {//derecha
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(37);
+            }
+            if (evt.getKeyCode() == 38) {//arriba
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(38);
+            }
+            if (evt.getKeyCode() == 40) {//abajo
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+            }
+        }
+    }//GEN-LAST:event_jButton5KeyPressed
+
+    private void jButton4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton4KeyPressed
+        // TODO add your handling code here:
+        if (this.jugar == true) {
+            if (evt.getKeyCode() == 39) {//izquierda
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(39);
+            }
+            if (evt.getKeyCode() == 37) {//derecha
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(37);
+            }
+            if (evt.getKeyCode() == 38) {//arriba
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+                mover_mario(38);
+            }
+            if (evt.getKeyCode() == 40) {//abajo
+                //JOptionPane.showMessageDialog(this, "yaaaaaaaaaaaaaaaaaaaaaa" + evt.getKeyCode());
+            }
+        }
+    }//GEN-LAST:event_jButton4KeyPressed
 
     /**
      * @param args the command line arguments
@@ -387,7 +484,7 @@ public class Juego extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Juego(0, 0).setVisible(true);
+                new Juego(0, 0, null).setVisible(true);
             }
         });
     }
@@ -457,8 +554,7 @@ public class Juego extends javax.swing.JFrame {
         tamaño_fila = ancho_pane_Matriz / No_columnas;
         tamaño_columna = altura_pane_Matriz / No_filas;
 
-        int contador_Lista = (No_filas * No_columnas);
-        javax.swing.JLabel[] label = new javax.swing.JLabel[contador_Lista];
+        contador_Lista = (No_filas * No_columnas);
 
         int columnas;
         int multiplicador_filas = 0;
@@ -509,7 +605,7 @@ public class Juego extends javax.swing.JFrame {
 
                         columna_temp++;
                         tempo = tempo.izquierda;
-                    }                    
+                    }
                 }
                 temp1 = temp1.abajo;
             }
@@ -531,4 +627,214 @@ public class Juego extends javax.swing.JFrame {
         this.jLabel1.setText("Hora: " + hora + " Minutos: " + min + " Segundos: " + seg);
     }
 
+    public int donde_esta_mario() {
+        Nodo_Matriz mario = this.Matriz_Tablero_Juego.raiz;
+        Nodo_Matriz mario1;
+        while (mario != null) {
+            if (mario.objeto.equals("Mario")) {
+                return mario.ID;
+            } else {
+                mario1 = mario.izquierda;
+                while (mario1 != null) {
+                    if (mario1.objeto.equals("Mario")) {
+                        return mario1.ID;
+                    }
+                    mario1 = mario1.izquierda;
+                }
+            }
+            mario = mario.abajo;
+        }
+        return 0;
+    }
+
+    public String que_sigue(int donde) {
+        Nodo_Matriz mario = this.Matriz_Tablero_Juego.raiz;
+        Nodo_Matriz mario1;
+        while (mario != null) {
+            if (mario.objeto.equals("Mario")) {
+                return mario.izquierda.objeto;
+            } else {
+                mario1 = mario.izquierda;
+                while (mario1 != null) {
+                    if (mario1.ID == donde) {
+                        return mario1.izquierda.objeto;
+                    }
+                    mario1 = mario1.izquierda;
+                }
+            }
+            mario = mario.abajo;
+        }
+        return null;
+    }
+
+    public String que_anterior(int donde) {
+        Nodo_Matriz mario = this.Matriz_Tablero_Juego.raiz;
+        Nodo_Matriz mario1;
+        while (mario != null) {
+            if (mario.objeto.equals("Mario")) {
+                return mario.derecha.objeto;
+            } else {
+                mario1 = mario.izquierda;
+                while (mario1 != null) {
+                    if (mario1.ID == donde) {
+                        return mario1.derecha.objeto;
+                    }
+                    mario1 = mario1.izquierda;
+                }
+            }
+            mario = mario.abajo;
+        }
+        return null;
+    }
+
+    public String que_arriba(int donde) {
+        Nodo_Matriz mario = this.Matriz_Tablero_Juego.raiz;
+        Nodo_Matriz mario1;
+        while (mario != null) {
+            if (mario.objeto.equals("Mario")) {
+                return mario.arriba.arriba.objeto;
+            } else {
+                mario1 = mario.izquierda;
+                while (mario1 != null) {
+                    if (mario1.ID == donde) {
+                        return mario1.arriba.arriba.objeto;
+                    }
+                    mario1 = mario1.izquierda;
+                }
+            }
+            mario = mario.abajo;
+        }
+        return null;
+    }
+
+    public String que_abajo(int donde) {
+        Nodo_Matriz mario = this.Matriz_Tablero_Juego.raiz;
+        Nodo_Matriz mario1;
+        while (mario != null) {
+            if (mario.objeto.equals("Mario")) {
+                return mario.abajo.objeto;
+            } else {
+                mario1 = mario.izquierda;
+                while (mario1 != null) {
+                    if (mario1.ID == donde) {
+                        return mario.abajo.objeto;
+                    }
+                    mario1 = mario1.izquierda;
+                }
+            }
+            mario = mario.abajo;
+        }
+        return null;
+    }
+
+    public void mover_mario(int movimiento) {
+        int temp = donde_esta_mario();
+        //JOptionPane.showMessageDialog(this, "donde esta mario: " + temp);
+        if (movimiento == 39) {
+            if (que_sigue(temp).equals("vacio")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + 1, "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+            } else if (que_sigue(temp).equals("Ficha")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + 1, "Mario");
+                puntos++;
+                this.jLabel3.setText(puntos + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+            } else if (que_sigue(temp).equals("Hongo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + 1, "Mario");
+                vidas++;
+                this.jLabel5.setText(vidas + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+            } else if (que_sigue(temp).equals("Castillo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + 1, "Mario");
+                JOptionPane.showMessageDialog(this, "Felicidades Ganaste");
+                this.carga_objetos.setVisible(true);
+                this.setVisible(false);
+            }
+        } else if (movimiento == 37) {
+            if (que_anterior(temp).equals("vacio")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - 1, "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            } else if (que_anterior(temp).equals("Ficha")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - 1, "Mario");
+                puntos++;
+                this.jLabel3.setText(puntos + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            } else if (que_anterior(temp).equals("Hongo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - 1, "Mario");
+                vidas++;
+                this.jLabel5.setText(vidas + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            } else if (que_anterior(temp).equals("Castillo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - 1, "Mario");
+                JOptionPane.showMessageDialog(this, "Felicidades Ganaste");
+                this.carga_objetos.setVisible(true);
+                this.setVisible(false);
+            }
+        } else if (movimiento == 38) {
+            if (que_arriba(temp).equals("vacio")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - (contador_columnas * 2), "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+
+                temp = donde_esta_mario();
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + (contador_columnas * 2), "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+
+            } else if (que_arriba(temp).equals("Ficha")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - (contador_columnas * 2), "Mario");
+                puntos++;
+                this.jLabel3.setText(puntos + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+
+                temp = donde_esta_mario();
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + (contador_columnas * 2), "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            } else if (que_arriba(temp).equals("Hongo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - (contador_columnas * 2), "Mario");
+                vidas++;
+                this.jLabel5.setText(vidas + "");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+
+                temp = donde_esta_mario();
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp + (contador_columnas * 2), "Mario");
+                this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+                SwingUtilities.updateComponentTreeUI(this);
+                
+            } else if (que_arriba(temp).equals("Castillo")) {
+                Matriz_Tablero_Juego.modificar(temp, "vacio");
+                Matriz_Tablero_Juego.modificar(temp - (contador_columnas * 2), "Mario");
+                JOptionPane.showMessageDialog(this, "Felicidades Ganaste");
+                this.carga_objetos.setVisible(true);
+                this.setVisible(false);
+            }
+        }
+    }
 }

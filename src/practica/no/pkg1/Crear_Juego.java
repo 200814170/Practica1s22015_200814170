@@ -472,7 +472,7 @@ public class Crear_Juego extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // Iniciar Juego
-        Juego juego = new Juego(contador_filas, contador_columnas);
+        Juego juego = new Juego(contador_filas, contador_columnas, Matriz_Tablero);
         juego.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton8ActionPerformed

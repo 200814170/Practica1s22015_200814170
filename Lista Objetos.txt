@@ -1,8 +1,194 @@
 digraph G{ 
 label = "Lista de Objetos";
 
-Nodo0 [shape=box,color="blue", label = "Objeto: Hongo
-Nombre: Agregado"];
+Nodo0 [shape=box,color="blue", label = "Objeto: Castillo
+Nombre: sd"];
 
-{rank = same; "Nodo0";}
+Nodo1 [shape=box,color="blue", label = "Objeto: Tortuga
+Nombre: sd"];
+
+Nodo2 [shape=box,color="blue", label = "Objeto: Goomba
+Nombre: sad"];
+
+Nodo3 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: s"];
+
+Nodo4 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: sd"];
+
+Nodo5 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: sd"];
+
+Nodo6 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: sd"];
+
+Nodo7 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: sd"];
+
+Nodo8 [shape=box,color="blue", label = "Objeto: Suelo
+Nombre: sdsfdf"];
+
+Nodo9 [shape=box,color="blue", label = "Objeto: Hongo
+Nombre: ,,,"];
+
+Nodo10 [shape=box,color="blue", label = "Objeto: Hongo
+Nombre: ´´"];
+
+Nodo11 [shape=box,color="blue", label = "Objeto: Hongo
+Nombre: ññ"];
+
+Nodo12 [shape=box,color="blue", label = "Objeto: Hongo
+Nombre: {{"];
+
+Nodo13 [shape=box,color="blue", label = "Objeto: Hongo
+Nombre: {"];
+
+Nodo14 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo15 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo16 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo17 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo18 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo19 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo20 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo21 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo22 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo23 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo24 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo25 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo26 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo27 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo28 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo29 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {"];
+
+Nodo30 [shape=box,color="blue", label = "Objeto: Ficha
+Nombre: {{"];
+
+Nodo31 [shape=box,color="blue", label = "Objeto: Mario
+Nombre: <"];
+
+Nodo0 -> Nodo1;
+Nodo1 -> Nodo0;
+
+Nodo1 -> Nodo2;
+Nodo2 -> Nodo1;
+
+Nodo2 -> Nodo3;
+Nodo3 -> Nodo2;
+
+Nodo3 -> Nodo4;
+Nodo4 -> Nodo3;
+
+Nodo4 -> Nodo5;
+Nodo5 -> Nodo4;
+
+Nodo5 -> Nodo6;
+Nodo6 -> Nodo5;
+
+Nodo6 -> Nodo7;
+Nodo7 -> Nodo6;
+
+Nodo7 -> Nodo8;
+Nodo8 -> Nodo7;
+
+Nodo8 -> Nodo9;
+Nodo9 -> Nodo8;
+
+Nodo9 -> Nodo10;
+Nodo10 -> Nodo9;
+
+Nodo10 -> Nodo11;
+Nodo11 -> Nodo10;
+
+Nodo11 -> Nodo12;
+Nodo12 -> Nodo11;
+
+Nodo12 -> Nodo13;
+Nodo13 -> Nodo12;
+
+Nodo13 -> Nodo14;
+Nodo14 -> Nodo13;
+
+Nodo14 -> Nodo15;
+Nodo15 -> Nodo14;
+
+Nodo15 -> Nodo16;
+Nodo16 -> Nodo15;
+
+Nodo16 -> Nodo17;
+Nodo17 -> Nodo16;
+
+Nodo17 -> Nodo18;
+Nodo18 -> Nodo17;
+
+Nodo18 -> Nodo19;
+Nodo19 -> Nodo18;
+
+Nodo19 -> Nodo20;
+Nodo20 -> Nodo19;
+
+Nodo20 -> Nodo21;
+Nodo21 -> Nodo20;
+
+Nodo21 -> Nodo22;
+Nodo22 -> Nodo21;
+
+Nodo22 -> Nodo23;
+Nodo23 -> Nodo22;
+
+Nodo23 -> Nodo24;
+Nodo24 -> Nodo23;
+
+Nodo24 -> Nodo25;
+Nodo25 -> Nodo24;
+
+Nodo25 -> Nodo26;
+Nodo26 -> Nodo25;
+
+Nodo26 -> Nodo27;
+Nodo27 -> Nodo26;
+
+Nodo27 -> Nodo28;
+Nodo28 -> Nodo27;
+
+Nodo28 -> Nodo29;
+Nodo29 -> Nodo28;
+
+Nodo29 -> Nodo30;
+Nodo30 -> Nodo29;
+
+Nodo30 -> Nodo31;
+Nodo31 -> Nodo30;
+
+{rank = same; "Nodo0"; "Nodo1"; "Nodo2"; "Nodo3"; "Nodo4"; "Nodo5"; "Nodo6"; "Nodo7"; "Nodo8"; "Nodo9"; "Nodo10"; "Nodo11"; "Nodo12"; "Nodo13"; "Nodo14"; "Nodo15"; "Nodo16"; "Nodo17"; "Nodo18"; "Nodo19"; "Nodo20"; "Nodo21"; "Nodo22"; "Nodo23"; "Nodo24"; "Nodo25"; "Nodo26"; "Nodo27"; "Nodo28"; "Nodo29"; "Nodo30"; "Nodo31";}
 }

@@ -12,80 +12,625 @@ label = "Matriz de Juego";
 10 [shape=box,color="white", label = ""];
 11 [shape=box,color="white", label = ""];
 12 [shape=box,color="white", label = ""];
+13 [shape=box,color="white", label = ""];
+14 [shape=box,color="white", label = ""];
+15 [shape=box,color="white", label = ""];
+16 [shape=box,color="white", label = ""];
+17 [shape=box,color="white", label = ""];
+18 [shape=box,color="white", label = ""];
+19 [shape=box,color="white", label = ""];
+20 [shape=box,color="white", label = ""];
+21 [shape=box,color="white", label = ""];
+22 [shape=box,color="white", label = ""];
+23 [shape=box,color="white", label = ""];
+24 [shape=box,color="white", label = ""];
+25 [shape=box,color="white", label = ""];
+26 [shape=box,color="white", label = ""];
+27 [shape=box,color="white", label = ""];
+28 [shape=box,color="white", label = ""];
+29 [shape=box,color="white", label = ""];
+30 [shape=box,color="white", label = ""];
+31 [shape=box,color="white", label = ""];
+32 [shape=box,color="white", label = ""];
+33 [shape=box,color="white", label = ""];
+34 [shape=box,color="white", label = ""];
+35 [shape=box,color="white", label = ""];
+36 [shape=box,color="white", label = ""];
+37 [shape=box,color="white", label = ""];
+38 [shape=box,color="white", label = ""];
 
-Nodo0 [shape=box,color="blue", label = "vacio
-0"];
 Nodo1 [shape=box,color="blue", label = "vacio
 1"];
-Nodo2 [shape=box,color="blue", label = "vacio
-2"];
-Nodo3 [shape=box,color="blue", label = "vacio
-3"];
-Nodo4 [shape=box,color="blue", label = "vacio
-4"];
-Nodo5 [shape=box,color="blue", label = "vacio
-5"];
-Nodo6 [shape=box,color="blue", label = "vacio
-6"];
-Nodo7 [shape=box,color="blue", label = "vacio
-7"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
+Nodo1 [shape=box,color="blue", label = "vacio
+1"];
 
-{rank = same;"1";"2";"3";"4";}
-{rank = same;"5";"Nodo0";"Nodo1";"Nodo2";"Nodo3";"6";}
-{rank = same;"7";"Nodo4";"Nodo5";"Nodo6";"Nodo7";"8";}
-{rank = same;"9";"10";"11";"12";}
+{rank = same;"1";"2";"3";"4";"5";"6";"7";"8";"9";"10";"11";"12";"13";}
+{rank = same;"14";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"15";}
+{rank = same;"16";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"17";}
+{rank = same;"18";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"19";}
+{rank = same;"20";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"21";}
+{rank = same;"22";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"23";}
+{rank = same;"24";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"25";}
+{rank = same;"26";"27";"28";"29";"30";"31";"32";"33";"34";"35";"36";"37";"38";}
 
-Nodo0-> Nodo1;
-Nodo1-> Nodo0;
-Nodo0-> Nodo4;
-Nodo4-> Nodo0;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
 
-Nodo1-> Nodo2;
-Nodo2-> Nodo1;
-Nodo1-> Nodo5;
-Nodo5-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
 
-Nodo2-> Nodo3;
-Nodo3-> Nodo2;
-Nodo2-> Nodo6;
-Nodo6-> Nodo2;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
 
-Nodo3-> Nodo7;
-Nodo7-> Nodo3;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
 
-Nodo4-> Nodo5;
-Nodo5-> Nodo4;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
 
-Nodo5-> Nodo6;
-Nodo6-> Nodo5;
-Nodo6-> Nodo7;
-Nodo7-> Nodo6;
-1->Nodo0[color = white];
-Nodo0->1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+Nodo1-> Nodo1;
+1->Nodo1[color = white];
+Nodo1->1;
 2->Nodo1[color = white];
 Nodo1->2;
-3->Nodo2[color = white];
-Nodo2->3;
-4->Nodo3[color = white];
-Nodo3->4;
-6->Nodo3[color = white];
-Nodo3->6;
-6->8[color = white];
-8->Nodo7[color = white];
-Nodo7->8;
-1->5[color = white];
-5->Nodo0[color = white];
-Nodo0->5;
-5->7[color = white];
-7->Nodo4[color = white];
-Nodo4->7;
-9->Nodo4[color = white];
-Nodo4->9;
-10->Nodo5[color = white];
-Nodo5->10;
-11->Nodo6[color = white];
-Nodo6->11;
-12->Nodo7[color = white];
-Nodo7->12;
+3->Nodo1[color = white];
+Nodo1->3;
+4->Nodo1[color = white];
+Nodo1->4;
+5->Nodo1[color = white];
+Nodo1->5;
+6->Nodo1[color = white];
+Nodo1->6;
+7->Nodo1[color = white];
+Nodo1->7;
+8->Nodo1[color = white];
+Nodo1->8;
+9->Nodo1[color = white];
+Nodo1->9;
+10->Nodo1[color = white];
+Nodo1->10;
+11->Nodo1[color = white];
+Nodo1->11;
+12->Nodo1[color = white];
+Nodo1->12;
+13->Nodo1[color = white];
+Nodo1->13;
+15->Nodo1[color = white];
+Nodo1->15;
+15->17[color = white];
+17->Nodo1[color = white];
+Nodo1->17;
+17->19[color = white];
+19->Nodo1[color = white];
+Nodo1->19;
+19->21[color = white];
+21->Nodo1[color = white];
+Nodo1->21;
+21->23[color = white];
+23->Nodo1[color = white];
+Nodo1->23;
+23->25[color = white];
+25->Nodo1[color = white];
+Nodo1->25;
+1->14[color = white];
+14->Nodo1[color = white];
+Nodo1->14;
+14->16[color = white];
+16->Nodo1[color = white];
+Nodo1->16;
+16->18[color = white];
+18->Nodo1[color = white];
+Nodo1->18;
+18->20[color = white];
+20->Nodo1[color = white];
+Nodo1->20;
+20->22[color = white];
+22->Nodo1[color = white];
+Nodo1->22;
+22->24[color = white];
+24->Nodo1[color = white];
+Nodo1->24;
+26->Nodo1[color = white];
+Nodo1->26;
+27->Nodo1[color = white];
+Nodo1->27;
+28->Nodo1[color = white];
+Nodo1->28;
+29->Nodo1[color = white];
+Nodo1->29;
+30->Nodo1[color = white];
+Nodo1->30;
+31->Nodo1[color = white];
+Nodo1->31;
+32->Nodo1[color = white];
+Nodo1->32;
+33->Nodo1[color = white];
+Nodo1->33;
+34->Nodo1[color = white];
+Nodo1->34;
+35->Nodo1[color = white];
+Nodo1->35;
+36->Nodo1[color = white];
+Nodo1->36;
+37->Nodo1[color = white];
+Nodo1->37;
+38->Nodo1[color = white];
+Nodo1->38;
 
 }
