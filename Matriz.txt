@@ -26,291 +26,1368 @@ label = "Matriz de Juego";
 24 [shape=box,color="white", label = ""];
 25 [shape=box,color="white", label = ""];
 26 [shape=box,color="white", label = ""];
+27 [shape=box,color="white", label = ""];
+28 [shape=box,color="white", label = ""];
+29 [shape=box,color="white", label = ""];
+30 [shape=box,color="white", label = ""];
+31 [shape=box,color="white", label = ""];
+32 [shape=box,color="white", label = ""];
+33 [shape=box,color="white", label = ""];
+34 [shape=box,color="white", label = ""];
+35 [shape=box,color="white", label = ""];
+36 [shape=box,color="white", label = ""];
+37 [shape=box,color="white", label = ""];
+38 [shape=box,color="white", label = ""];
+39 [shape=box,color="white", label = ""];
+40 [shape=box,color="white", label = ""];
+41 [shape=box,color="white", label = ""];
+42 [shape=box,color="white", label = ""];
+43 [shape=box,color="white", label = ""];
+44 [shape=box,color="white", label = ""];
+45 [shape=box,color="white", label = ""];
+46 [shape=box,color="white", label = ""];
+47 [shape=box,color="white", label = ""];
+48 [shape=box,color="white", label = ""];
+49 [shape=box,color="white", label = ""];
+50 [shape=box,color="white", label = ""];
+51 [shape=box,color="white", label = ""];
+52 [shape=box,color="white", label = ""];
+53 [shape=box,color="white", label = ""];
+54 [shape=box,color="white", label = ""];
+55 [shape=box,color="white", label = ""];
+56 [shape=box,color="white", label = ""];
 
+Nodo0 [shape=box,color="blue", label = "vacio
+0"];
 Nodo1 [shape=box,color="blue", label = "vacio
 1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "Castillo
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "Mario
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
-Nodo1 [shape=box,color="blue", label = "vacio
-1"];
+Nodo2 [shape=box,color="blue", label = "vacio
+2"];
+Nodo3 [shape=box,color="blue", label = "vacio
+3"];
+Nodo4 [shape=box,color="blue", label = "vacio
+4"];
+Nodo5 [shape=box,color="blue", label = "vacio
+5"];
+Nodo6 [shape=box,color="blue", label = "vacio
+6"];
+Nodo7 [shape=box,color="blue", label = "vacio
+7"];
+Nodo8 [shape=box,color="blue", label = "vacio
+8"];
+Nodo9 [shape=box,color="blue", label = "vacio
+9"];
+Nodo10 [shape=box,color="blue", label = "vacio
+10"];
+Nodo11 [shape=box,color="blue", label = "vacio
+11"];
+Nodo12 [shape=box,color="blue", label = "vacio
+12"];
+Nodo13 [shape=box,color="blue", label = "vacio
+13"];
+Nodo14 [shape=box,color="blue", label = "vacio
+14"];
+Nodo15 [shape=box,color="blue", label = "vacio
+15"];
+Nodo16 [shape=box,color="blue", label = "vacio
+16"];
+Nodo17 [shape=box,color="blue", label = "Tortuga
+17"];
+Nodo18 [shape=box,color="blue", label = "vacio
+18"];
+Nodo19 [shape=box,color="blue", label = "vacio
+19"];
+Nodo20 [shape=box,color="blue", label = "vacio
+20"];
+Nodo21 [shape=box,color="blue", label = "vacio
+21"];
+Nodo22 [shape=box,color="blue", label = "vacio
+22"];
+Nodo23 [shape=box,color="blue", label = "vacio
+23"];
+Nodo24 [shape=box,color="blue", label = "vacio
+24"];
+Nodo25 [shape=box,color="blue", label = "vacio
+25"];
+Nodo26 [shape=box,color="blue", label = "vacio
+26"];
+Nodo27 [shape=box,color="blue", label = "vacio
+27"];
+Nodo28 [shape=box,color="blue", label = "vacio
+28"];
+Nodo29 [shape=box,color="blue", label = "vacio
+29"];
+Nodo30 [shape=box,color="blue", label = "vacio
+30"];
+Nodo31 [shape=box,color="blue", label = "vacio
+31"];
+Nodo32 [shape=box,color="blue", label = "vacio
+32"];
+Nodo33 [shape=box,color="blue", label = "vacio
+33"];
+Nodo34 [shape=box,color="blue", label = "vacio
+34"];
+Nodo35 [shape=box,color="blue", label = "vacio
+35"];
+Nodo36 [shape=box,color="blue", label = "vacio
+36"];
+Nodo37 [shape=box,color="blue", label = "vacio
+37"];
+Nodo38 [shape=box,color="blue", label = "vacio
+38"];
+Nodo39 [shape=box,color="blue", label = "vacio
+39"];
+Nodo40 [shape=box,color="blue", label = "vacio
+40"];
+Nodo41 [shape=box,color="blue", label = "vacio
+41"];
+Nodo42 [shape=box,color="blue", label = "vacio
+42"];
+Nodo43 [shape=box,color="blue", label = "vacio
+43"];
+Nodo44 [shape=box,color="blue", label = "vacio
+44"];
+Nodo45 [shape=box,color="blue", label = "vacio
+45"];
+Nodo46 [shape=box,color="blue", label = "vacio
+46"];
+Nodo47 [shape=box,color="blue", label = "vacio
+47"];
+Nodo48 [shape=box,color="blue", label = "vacio
+48"];
+Nodo49 [shape=box,color="blue", label = "vacio
+49"];
+Nodo50 [shape=box,color="blue", label = "vacio
+50"];
+Nodo51 [shape=box,color="blue", label = "vacio
+51"];
+Nodo52 [shape=box,color="blue", label = "vacio
+52"];
+Nodo53 [shape=box,color="blue", label = "vacio
+53"];
+Nodo54 [shape=box,color="blue", label = "vacio
+54"];
+Nodo55 [shape=box,color="blue", label = "vacio
+55"];
+Nodo56 [shape=box,color="blue", label = "vacio
+56"];
+Nodo57 [shape=box,color="blue", label = "vacio
+57"];
+Nodo58 [shape=box,color="blue", label = "vacio
+58"];
+Nodo59 [shape=box,color="blue", label = "vacio
+59"];
+Nodo60 [shape=box,color="blue", label = "vacio
+60"];
+Nodo61 [shape=box,color="blue", label = "vacio
+61"];
+Nodo62 [shape=box,color="blue", label = "vacio
+62"];
+Nodo63 [shape=box,color="blue", label = "vacio
+63"];
+Nodo64 [shape=box,color="blue", label = "vacio
+64"];
+Nodo65 [shape=box,color="blue", label = "vacio
+65"];
+Nodo66 [shape=box,color="blue", label = "vacio
+66"];
+Nodo67 [shape=box,color="blue", label = "vacio
+67"];
+Nodo68 [shape=box,color="blue", label = "vacio
+68"];
+Nodo69 [shape=box,color="blue", label = "vacio
+69"];
+Nodo70 [shape=box,color="blue", label = "vacio
+70"];
+Nodo71 [shape=box,color="blue", label = "vacio
+71"];
+Nodo72 [shape=box,color="blue", label = "vacio
+72"];
+Nodo73 [shape=box,color="blue", label = "vacio
+73"];
+Nodo74 [shape=box,color="blue", label = "vacio
+74"];
+Nodo75 [shape=box,color="blue", label = "vacio
+75"];
+Nodo76 [shape=box,color="blue", label = "vacio
+76"];
+Nodo77 [shape=box,color="blue", label = "vacio
+77"];
+Nodo78 [shape=box,color="blue", label = "vacio
+78"];
+Nodo79 [shape=box,color="blue", label = "vacio
+79"];
+Nodo80 [shape=box,color="blue", label = "vacio
+80"];
+Nodo81 [shape=box,color="blue", label = "vacio
+81"];
+Nodo82 [shape=box,color="blue", label = "vacio
+82"];
+Nodo83 [shape=box,color="blue", label = "vacio
+83"];
+Nodo84 [shape=box,color="blue", label = "vacio
+84"];
+Nodo85 [shape=box,color="blue", label = "vacio
+85"];
+Nodo86 [shape=box,color="blue", label = "vacio
+86"];
+Nodo87 [shape=box,color="blue", label = "vacio
+87"];
+Nodo88 [shape=box,color="blue", label = "vacio
+88"];
+Nodo89 [shape=box,color="blue", label = "vacio
+89"];
+Nodo90 [shape=box,color="blue", label = "vacio
+90"];
+Nodo91 [shape=box,color="blue", label = "vacio
+91"];
+Nodo92 [shape=box,color="blue", label = "vacio
+92"];
+Nodo93 [shape=box,color="blue", label = "vacio
+93"];
+Nodo94 [shape=box,color="blue", label = "Suelo
+94"];
+Nodo95 [shape=box,color="blue", label = "vacio
+95"];
+Nodo96 [shape=box,color="blue", label = "vacio
+96"];
+Nodo97 [shape=box,color="blue", label = "vacio
+97"];
+Nodo98 [shape=box,color="blue", label = "vacio
+98"];
+Nodo99 [shape=box,color="blue", label = "vacio
+99"];
+Nodo100 [shape=box,color="blue", label = "Pared
+100"];
+Nodo101 [shape=box,color="blue", label = "vacio
+101"];
+Nodo102 [shape=box,color="blue", label = "vacio
+102"];
+Nodo103 [shape=box,color="blue", label = "vacio
+103"];
+Nodo104 [shape=box,color="blue", label = "vacio
+104"];
+Nodo105 [shape=box,color="blue", label = "vacio
+105"];
+Nodo106 [shape=box,color="blue", label = "vacio
+106"];
+Nodo107 [shape=box,color="blue", label = "vacio
+107"];
+Nodo108 [shape=box,color="blue", label = "vacio
+108"];
+Nodo109 [shape=box,color="blue", label = "vacio
+109"];
+Nodo110 [shape=box,color="blue", label = "vacio
+110"];
+Nodo111 [shape=box,color="blue", label = "vacio
+111"];
+Nodo112 [shape=box,color="blue", label = "vacio
+112"];
+Nodo113 [shape=box,color="blue", label = "vacio
+113"];
+Nodo114 [shape=box,color="blue", label = "vacio
+114"];
+Nodo115 [shape=box,color="blue", label = "vacio
+115"];
+Nodo116 [shape=box,color="blue", label = "vacio
+116"];
+Nodo117 [shape=box,color="blue", label = "vacio
+117"];
+Nodo118 [shape=box,color="blue", label = "vacio
+118"];
+Nodo119 [shape=box,color="blue", label = "vacio
+119"];
+Nodo120 [shape=box,color="blue", label = "vacio
+120"];
+Nodo121 [shape=box,color="blue", label = "vacio
+121"];
+Nodo122 [shape=box,color="blue", label = "vacio
+122"];
+Nodo123 [shape=box,color="blue", label = "vacio
+123"];
+Nodo124 [shape=box,color="blue", label = "vacio
+124"];
+Nodo125 [shape=box,color="blue", label = "vacio
+125"];
+Nodo126 [shape=box,color="blue", label = "vacio
+126"];
+Nodo127 [shape=box,color="blue", label = "vacio
+127"];
+Nodo128 [shape=box,color="blue", label = "vacio
+128"];
+Nodo129 [shape=box,color="blue", label = "vacio
+129"];
+Nodo130 [shape=box,color="blue", label = "vacio
+130"];
+Nodo131 [shape=box,color="blue", label = "vacio
+131"];
+Nodo132 [shape=box,color="blue", label = "vacio
+132"];
+Nodo133 [shape=box,color="blue", label = "vacio
+133"];
+Nodo134 [shape=box,color="blue", label = "Ficha
+134"];
+Nodo135 [shape=box,color="blue", label = "vacio
+135"];
+Nodo136 [shape=box,color="blue", label = "vacio
+136"];
+Nodo137 [shape=box,color="blue", label = "vacio
+137"];
+Nodo138 [shape=box,color="blue", label = "vacio
+138"];
+Nodo139 [shape=box,color="blue", label = "vacio
+139"];
+Nodo140 [shape=box,color="blue", label = "vacio
+140"];
+Nodo141 [shape=box,color="blue", label = "vacio
+141"];
+Nodo142 [shape=box,color="blue", label = "vacio
+142"];
+Nodo143 [shape=box,color="blue", label = "vacio
+143"];
+Nodo144 [shape=box,color="blue", label = "vacio
+144"];
+Nodo145 [shape=box,color="blue", label = "vacio
+145"];
+Nodo146 [shape=box,color="blue", label = "vacio
+146"];
+Nodo147 [shape=box,color="blue", label = "vacio
+147"];
+Nodo148 [shape=box,color="blue", label = "Goomba
+148"];
+Nodo149 [shape=box,color="blue", label = "vacio
+149"];
+Nodo150 [shape=box,color="blue", label = "vacio
+150"];
+Nodo151 [shape=box,color="blue", label = "vacio
+151"];
+Nodo152 [shape=box,color="blue", label = "vacio
+152"];
+Nodo153 [shape=box,color="blue", label = "vacio
+153"];
+Nodo154 [shape=box,color="blue", label = "vacio
+154"];
+Nodo155 [shape=box,color="blue", label = "vacio
+155"];
+Nodo156 [shape=box,color="blue", label = "vacio
+156"];
+Nodo157 [shape=box,color="blue", label = "vacio
+157"];
+Nodo158 [shape=box,color="blue", label = "vacio
+158"];
+Nodo159 [shape=box,color="blue", label = "vacio
+159"];
+Nodo160 [shape=box,color="blue", label = "vacio
+160"];
+Nodo161 [shape=box,color="blue", label = "vacio
+161"];
+Nodo162 [shape=box,color="blue", label = "Mario
+162"];
+Nodo163 [shape=box,color="blue", label = "Hongo
+163"];
+Nodo164 [shape=box,color="blue", label = "vacio
+164"];
+Nodo165 [shape=box,color="blue", label = "vacio
+165"];
+Nodo166 [shape=box,color="blue", label = "vacio
+166"];
+Nodo167 [shape=box,color="blue", label = "vacio
+167"];
+Nodo168 [shape=box,color="blue", label = "vacio
+168"];
+Nodo169 [shape=box,color="blue", label = "vacio
+169"];
+Nodo170 [shape=box,color="blue", label = "vacio
+170"];
+Nodo171 [shape=box,color="blue", label = "vacio
+171"];
+Nodo172 [shape=box,color="blue", label = "vacio
+172"];
+Nodo173 [shape=box,color="blue", label = "vacio
+173"];
+Nodo174 [shape=box,color="blue", label = "vacio
+174"];
+Nodo175 [shape=box,color="blue", label = "vacio
+175"];
+Nodo176 [shape=box,color="blue", label = "vacio
+176"];
+Nodo177 [shape=box,color="blue", label = "vacio
+177"];
+Nodo178 [shape=box,color="blue", label = "vacio
+178"];
+Nodo179 [shape=box,color="blue", label = "Castillo
+179"];
 
-{rank = same;"1";"2";"3";"4";"5";"6";"7";"8";"9";}
-{rank = same;"10";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"11";}
-{rank = same;"12";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"13";}
-{rank = same;"14";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"15";}
-{rank = same;"16";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"Nodo1";"17";}
-{rank = same;"18";"19";"20";"21";"22";"23";"24";"25";"26";}
+{rank = same;"1";"2";"3";"4";"5";"6";"7";"8";"9";"10";"11";"12";"13";"14";"15";"16";"17";"18";}
+{rank = same;"19";"Nodo0";"Nodo1";"Nodo2";"Nodo3";"Nodo4";"Nodo5";"Nodo6";"Nodo7";"Nodo8";"Nodo9";"Nodo10";"Nodo11";"Nodo12";"Nodo13";"Nodo14";"Nodo15";"Nodo16";"Nodo17";"20";}
+{rank = same;"21";"Nodo18";"Nodo19";"Nodo20";"Nodo21";"Nodo22";"Nodo23";"Nodo24";"Nodo25";"Nodo26";"Nodo27";"Nodo28";"Nodo29";"Nodo30";"Nodo31";"Nodo32";"Nodo33";"Nodo34";"Nodo35";"22";}
+{rank = same;"23";"Nodo36";"Nodo37";"Nodo38";"Nodo39";"Nodo40";"Nodo41";"Nodo42";"Nodo43";"Nodo44";"Nodo45";"Nodo46";"Nodo47";"Nodo48";"Nodo49";"Nodo50";"Nodo51";"Nodo52";"Nodo53";"24";}
+{rank = same;"25";"Nodo54";"Nodo55";"Nodo56";"Nodo57";"Nodo58";"Nodo59";"Nodo60";"Nodo61";"Nodo62";"Nodo63";"Nodo64";"Nodo65";"Nodo66";"Nodo67";"Nodo68";"Nodo69";"Nodo70";"Nodo71";"26";}
+{rank = same;"27";"Nodo72";"Nodo73";"Nodo74";"Nodo75";"Nodo76";"Nodo77";"Nodo78";"Nodo79";"Nodo80";"Nodo81";"Nodo82";"Nodo83";"Nodo84";"Nodo85";"Nodo86";"Nodo87";"Nodo88";"Nodo89";"28";}
+{rank = same;"29";"Nodo90";"Nodo91";"Nodo92";"Nodo93";"Nodo94";"Nodo95";"Nodo96";"Nodo97";"Nodo98";"Nodo99";"Nodo100";"Nodo101";"Nodo102";"Nodo103";"Nodo104";"Nodo105";"Nodo106";"Nodo107";"30";}
+{rank = same;"31";"Nodo108";"Nodo109";"Nodo110";"Nodo111";"Nodo112";"Nodo113";"Nodo114";"Nodo115";"Nodo116";"Nodo117";"Nodo118";"Nodo119";"Nodo120";"Nodo121";"Nodo122";"Nodo123";"Nodo124";"Nodo125";"32";}
+{rank = same;"33";"Nodo126";"Nodo127";"Nodo128";"Nodo129";"Nodo130";"Nodo131";"Nodo132";"Nodo133";"Nodo134";"Nodo135";"Nodo136";"Nodo137";"Nodo138";"Nodo139";"Nodo140";"Nodo141";"Nodo142";"Nodo143";"34";}
+{rank = same;"35";"Nodo144";"Nodo145";"Nodo146";"Nodo147";"Nodo148";"Nodo149";"Nodo150";"Nodo151";"Nodo152";"Nodo153";"Nodo154";"Nodo155";"Nodo156";"Nodo157";"Nodo158";"Nodo159";"Nodo160";"Nodo161";"36";}
+{rank = same;"37";"Nodo162";"Nodo163";"Nodo164";"Nodo165";"Nodo166";"Nodo167";"Nodo168";"Nodo169";"Nodo170";"Nodo171";"Nodo172";"Nodo173";"Nodo174";"Nodo175";"Nodo176";"Nodo177";"Nodo178";"Nodo179";"38";}
+{rank = same;"39";"40";"41";"42";"43";"44";"45";"46";"47";"48";"49";"50";"51";"52";"53";"54";"55";"56";}
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo0-> Nodo1;
+Nodo1-> Nodo0;
+Nodo0-> Nodo18;
+Nodo18-> Nodo0;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo1-> Nodo2;
+Nodo2-> Nodo1;
+Nodo1-> Nodo19;
+Nodo19-> Nodo1;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo2-> Nodo3;
+Nodo3-> Nodo2;
+Nodo2-> Nodo20;
+Nodo20-> Nodo2;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo3-> Nodo4;
+Nodo4-> Nodo3;
+Nodo3-> Nodo21;
+Nodo21-> Nodo3;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo4-> Nodo5;
+Nodo5-> Nodo4;
+Nodo4-> Nodo22;
+Nodo22-> Nodo4;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo5-> Nodo6;
+Nodo6-> Nodo5;
+Nodo5-> Nodo23;
+Nodo23-> Nodo5;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo6-> Nodo7;
+Nodo7-> Nodo6;
+Nodo6-> Nodo24;
+Nodo24-> Nodo6;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo7-> Nodo8;
+Nodo8-> Nodo7;
+Nodo7-> Nodo25;
+Nodo25-> Nodo7;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo8-> Nodo9;
+Nodo9-> Nodo8;
+Nodo8-> Nodo26;
+Nodo26-> Nodo8;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo9-> Nodo10;
+Nodo10-> Nodo9;
+Nodo9-> Nodo27;
+Nodo27-> Nodo9;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo10-> Nodo11;
+Nodo11-> Nodo10;
+Nodo10-> Nodo28;
+Nodo28-> Nodo10;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo11-> Nodo12;
+Nodo12-> Nodo11;
+Nodo11-> Nodo29;
+Nodo29-> Nodo11;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo12-> Nodo13;
+Nodo13-> Nodo12;
+Nodo12-> Nodo30;
+Nodo30-> Nodo12;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo13-> Nodo14;
+Nodo14-> Nodo13;
+Nodo13-> Nodo31;
+Nodo31-> Nodo13;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo14-> Nodo15;
+Nodo15-> Nodo14;
+Nodo14-> Nodo32;
+Nodo32-> Nodo14;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo15-> Nodo16;
+Nodo16-> Nodo15;
+Nodo15-> Nodo33;
+Nodo33-> Nodo15;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo16-> Nodo17;
+Nodo17-> Nodo16;
+Nodo16-> Nodo34;
+Nodo34-> Nodo16;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo17-> Nodo35;
+Nodo35-> Nodo17;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo18-> Nodo19;
+Nodo19-> Nodo18;
+Nodo18-> Nodo36;
+Nodo36-> Nodo18;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo19-> Nodo20;
+Nodo20-> Nodo19;
+Nodo19-> Nodo37;
+Nodo37-> Nodo19;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo20-> Nodo21;
+Nodo21-> Nodo20;
+Nodo20-> Nodo38;
+Nodo38-> Nodo20;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo21-> Nodo22;
+Nodo22-> Nodo21;
+Nodo21-> Nodo39;
+Nodo39-> Nodo21;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo22-> Nodo23;
+Nodo23-> Nodo22;
+Nodo22-> Nodo40;
+Nodo40-> Nodo22;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo23-> Nodo24;
+Nodo24-> Nodo23;
+Nodo23-> Nodo41;
+Nodo41-> Nodo23;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo24-> Nodo25;
+Nodo25-> Nodo24;
+Nodo24-> Nodo42;
+Nodo42-> Nodo24;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo25-> Nodo26;
+Nodo26-> Nodo25;
+Nodo25-> Nodo43;
+Nodo43-> Nodo25;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo26-> Nodo27;
+Nodo27-> Nodo26;
+Nodo26-> Nodo44;
+Nodo44-> Nodo26;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
+Nodo27-> Nodo28;
+Nodo28-> Nodo27;
+Nodo27-> Nodo45;
+Nodo45-> Nodo27;
 
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-Nodo1-> Nodo1;
-1->Nodo1[color = white];
-Nodo1->1;
+Nodo28-> Nodo29;
+Nodo29-> Nodo28;
+Nodo28-> Nodo46;
+Nodo46-> Nodo28;
+
+Nodo29-> Nodo30;
+Nodo30-> Nodo29;
+Nodo29-> Nodo47;
+Nodo47-> Nodo29;
+
+Nodo30-> Nodo31;
+Nodo31-> Nodo30;
+Nodo30-> Nodo48;
+Nodo48-> Nodo30;
+
+Nodo31-> Nodo32;
+Nodo32-> Nodo31;
+Nodo31-> Nodo49;
+Nodo49-> Nodo31;
+
+Nodo32-> Nodo33;
+Nodo33-> Nodo32;
+Nodo32-> Nodo50;
+Nodo50-> Nodo32;
+
+Nodo33-> Nodo34;
+Nodo34-> Nodo33;
+Nodo33-> Nodo51;
+Nodo51-> Nodo33;
+
+Nodo34-> Nodo35;
+Nodo35-> Nodo34;
+Nodo34-> Nodo52;
+Nodo52-> Nodo34;
+
+Nodo35-> Nodo53;
+Nodo53-> Nodo35;
+
+Nodo36-> Nodo37;
+Nodo37-> Nodo36;
+Nodo36-> Nodo54;
+Nodo54-> Nodo36;
+
+Nodo37-> Nodo38;
+Nodo38-> Nodo37;
+Nodo37-> Nodo55;
+Nodo55-> Nodo37;
+
+Nodo38-> Nodo39;
+Nodo39-> Nodo38;
+Nodo38-> Nodo56;
+Nodo56-> Nodo38;
+
+Nodo39-> Nodo40;
+Nodo40-> Nodo39;
+Nodo39-> Nodo57;
+Nodo57-> Nodo39;
+
+Nodo40-> Nodo41;
+Nodo41-> Nodo40;
+Nodo40-> Nodo58;
+Nodo58-> Nodo40;
+
+Nodo41-> Nodo42;
+Nodo42-> Nodo41;
+Nodo41-> Nodo59;
+Nodo59-> Nodo41;
+
+Nodo42-> Nodo43;
+Nodo43-> Nodo42;
+Nodo42-> Nodo60;
+Nodo60-> Nodo42;
+
+Nodo43-> Nodo44;
+Nodo44-> Nodo43;
+Nodo43-> Nodo61;
+Nodo61-> Nodo43;
+
+Nodo44-> Nodo45;
+Nodo45-> Nodo44;
+Nodo44-> Nodo62;
+Nodo62-> Nodo44;
+
+Nodo45-> Nodo46;
+Nodo46-> Nodo45;
+Nodo45-> Nodo63;
+Nodo63-> Nodo45;
+
+Nodo46-> Nodo47;
+Nodo47-> Nodo46;
+Nodo46-> Nodo64;
+Nodo64-> Nodo46;
+
+Nodo47-> Nodo48;
+Nodo48-> Nodo47;
+Nodo47-> Nodo65;
+Nodo65-> Nodo47;
+
+Nodo48-> Nodo49;
+Nodo49-> Nodo48;
+Nodo48-> Nodo66;
+Nodo66-> Nodo48;
+
+Nodo49-> Nodo50;
+Nodo50-> Nodo49;
+Nodo49-> Nodo67;
+Nodo67-> Nodo49;
+
+Nodo50-> Nodo51;
+Nodo51-> Nodo50;
+Nodo50-> Nodo68;
+Nodo68-> Nodo50;
+
+Nodo51-> Nodo52;
+Nodo52-> Nodo51;
+Nodo51-> Nodo69;
+Nodo69-> Nodo51;
+
+Nodo52-> Nodo53;
+Nodo53-> Nodo52;
+Nodo52-> Nodo70;
+Nodo70-> Nodo52;
+
+Nodo53-> Nodo71;
+Nodo71-> Nodo53;
+
+Nodo54-> Nodo55;
+Nodo55-> Nodo54;
+Nodo54-> Nodo72;
+Nodo72-> Nodo54;
+
+Nodo55-> Nodo56;
+Nodo56-> Nodo55;
+Nodo55-> Nodo73;
+Nodo73-> Nodo55;
+
+Nodo56-> Nodo57;
+Nodo57-> Nodo56;
+Nodo56-> Nodo74;
+Nodo74-> Nodo56;
+
+Nodo57-> Nodo58;
+Nodo58-> Nodo57;
+Nodo57-> Nodo75;
+Nodo75-> Nodo57;
+
+Nodo58-> Nodo59;
+Nodo59-> Nodo58;
+Nodo58-> Nodo76;
+Nodo76-> Nodo58;
+
+Nodo59-> Nodo60;
+Nodo60-> Nodo59;
+Nodo59-> Nodo77;
+Nodo77-> Nodo59;
+
+Nodo60-> Nodo61;
+Nodo61-> Nodo60;
+Nodo60-> Nodo78;
+Nodo78-> Nodo60;
+
+Nodo61-> Nodo62;
+Nodo62-> Nodo61;
+Nodo61-> Nodo79;
+Nodo79-> Nodo61;
+
+Nodo62-> Nodo63;
+Nodo63-> Nodo62;
+Nodo62-> Nodo80;
+Nodo80-> Nodo62;
+
+Nodo63-> Nodo64;
+Nodo64-> Nodo63;
+Nodo63-> Nodo81;
+Nodo81-> Nodo63;
+
+Nodo64-> Nodo65;
+Nodo65-> Nodo64;
+Nodo64-> Nodo82;
+Nodo82-> Nodo64;
+
+Nodo65-> Nodo66;
+Nodo66-> Nodo65;
+Nodo65-> Nodo83;
+Nodo83-> Nodo65;
+
+Nodo66-> Nodo67;
+Nodo67-> Nodo66;
+Nodo66-> Nodo84;
+Nodo84-> Nodo66;
+
+Nodo67-> Nodo68;
+Nodo68-> Nodo67;
+Nodo67-> Nodo85;
+Nodo85-> Nodo67;
+
+Nodo68-> Nodo69;
+Nodo69-> Nodo68;
+Nodo68-> Nodo86;
+Nodo86-> Nodo68;
+
+Nodo69-> Nodo70;
+Nodo70-> Nodo69;
+Nodo69-> Nodo87;
+Nodo87-> Nodo69;
+
+Nodo70-> Nodo71;
+Nodo71-> Nodo70;
+Nodo70-> Nodo88;
+Nodo88-> Nodo70;
+
+Nodo71-> Nodo89;
+Nodo89-> Nodo71;
+
+Nodo72-> Nodo73;
+Nodo73-> Nodo72;
+Nodo72-> Nodo90;
+Nodo90-> Nodo72;
+
+Nodo73-> Nodo74;
+Nodo74-> Nodo73;
+Nodo73-> Nodo91;
+Nodo91-> Nodo73;
+
+Nodo74-> Nodo75;
+Nodo75-> Nodo74;
+Nodo74-> Nodo92;
+Nodo92-> Nodo74;
+
+Nodo75-> Nodo76;
+Nodo76-> Nodo75;
+Nodo75-> Nodo93;
+Nodo93-> Nodo75;
+
+Nodo76-> Nodo77;
+Nodo77-> Nodo76;
+Nodo76-> Nodo94;
+Nodo94-> Nodo76;
+
+Nodo77-> Nodo78;
+Nodo78-> Nodo77;
+Nodo77-> Nodo95;
+Nodo95-> Nodo77;
+
+Nodo78-> Nodo79;
+Nodo79-> Nodo78;
+Nodo78-> Nodo96;
+Nodo96-> Nodo78;
+
+Nodo79-> Nodo80;
+Nodo80-> Nodo79;
+Nodo79-> Nodo97;
+Nodo97-> Nodo79;
+
+Nodo80-> Nodo81;
+Nodo81-> Nodo80;
+Nodo80-> Nodo98;
+Nodo98-> Nodo80;
+
+Nodo81-> Nodo82;
+Nodo82-> Nodo81;
+Nodo81-> Nodo99;
+Nodo99-> Nodo81;
+
+Nodo82-> Nodo83;
+Nodo83-> Nodo82;
+Nodo82-> Nodo100;
+Nodo100-> Nodo82;
+
+Nodo83-> Nodo84;
+Nodo84-> Nodo83;
+Nodo83-> Nodo101;
+Nodo101-> Nodo83;
+
+Nodo84-> Nodo85;
+Nodo85-> Nodo84;
+Nodo84-> Nodo102;
+Nodo102-> Nodo84;
+
+Nodo85-> Nodo86;
+Nodo86-> Nodo85;
+Nodo85-> Nodo103;
+Nodo103-> Nodo85;
+
+Nodo86-> Nodo87;
+Nodo87-> Nodo86;
+Nodo86-> Nodo104;
+Nodo104-> Nodo86;
+
+Nodo87-> Nodo88;
+Nodo88-> Nodo87;
+Nodo87-> Nodo105;
+Nodo105-> Nodo87;
+
+Nodo88-> Nodo89;
+Nodo89-> Nodo88;
+Nodo88-> Nodo106;
+Nodo106-> Nodo88;
+
+Nodo89-> Nodo107;
+Nodo107-> Nodo89;
+
+Nodo90-> Nodo91;
+Nodo91-> Nodo90;
+Nodo90-> Nodo108;
+Nodo108-> Nodo90;
+
+Nodo91-> Nodo92;
+Nodo92-> Nodo91;
+Nodo91-> Nodo109;
+Nodo109-> Nodo91;
+
+Nodo92-> Nodo93;
+Nodo93-> Nodo92;
+Nodo92-> Nodo110;
+Nodo110-> Nodo92;
+
+Nodo93-> Nodo94;
+Nodo94-> Nodo93;
+Nodo93-> Nodo111;
+Nodo111-> Nodo93;
+
+Nodo94-> Nodo95;
+Nodo95-> Nodo94;
+Nodo94-> Nodo112;
+Nodo112-> Nodo94;
+
+Nodo95-> Nodo96;
+Nodo96-> Nodo95;
+Nodo95-> Nodo113;
+Nodo113-> Nodo95;
+
+Nodo96-> Nodo97;
+Nodo97-> Nodo96;
+Nodo96-> Nodo114;
+Nodo114-> Nodo96;
+
+Nodo97-> Nodo98;
+Nodo98-> Nodo97;
+Nodo97-> Nodo115;
+Nodo115-> Nodo97;
+
+Nodo98-> Nodo99;
+Nodo99-> Nodo98;
+Nodo98-> Nodo116;
+Nodo116-> Nodo98;
+
+Nodo99-> Nodo100;
+Nodo100-> Nodo99;
+Nodo99-> Nodo117;
+Nodo117-> Nodo99;
+
+Nodo100-> Nodo101;
+Nodo101-> Nodo100;
+Nodo100-> Nodo118;
+Nodo118-> Nodo100;
+
+Nodo101-> Nodo102;
+Nodo102-> Nodo101;
+Nodo101-> Nodo119;
+Nodo119-> Nodo101;
+
+Nodo102-> Nodo103;
+Nodo103-> Nodo102;
+Nodo102-> Nodo120;
+Nodo120-> Nodo102;
+
+Nodo103-> Nodo104;
+Nodo104-> Nodo103;
+Nodo103-> Nodo121;
+Nodo121-> Nodo103;
+
+Nodo104-> Nodo105;
+Nodo105-> Nodo104;
+Nodo104-> Nodo122;
+Nodo122-> Nodo104;
+
+Nodo105-> Nodo106;
+Nodo106-> Nodo105;
+Nodo105-> Nodo123;
+Nodo123-> Nodo105;
+
+Nodo106-> Nodo107;
+Nodo107-> Nodo106;
+Nodo106-> Nodo124;
+Nodo124-> Nodo106;
+
+Nodo107-> Nodo125;
+Nodo125-> Nodo107;
+
+Nodo108-> Nodo109;
+Nodo109-> Nodo108;
+Nodo108-> Nodo126;
+Nodo126-> Nodo108;
+
+Nodo109-> Nodo110;
+Nodo110-> Nodo109;
+Nodo109-> Nodo127;
+Nodo127-> Nodo109;
+
+Nodo110-> Nodo111;
+Nodo111-> Nodo110;
+Nodo110-> Nodo128;
+Nodo128-> Nodo110;
+
+Nodo111-> Nodo112;
+Nodo112-> Nodo111;
+Nodo111-> Nodo129;
+Nodo129-> Nodo111;
+
+Nodo112-> Nodo113;
+Nodo113-> Nodo112;
+Nodo112-> Nodo130;
+Nodo130-> Nodo112;
+
+Nodo113-> Nodo114;
+Nodo114-> Nodo113;
+Nodo113-> Nodo131;
+Nodo131-> Nodo113;
+
+Nodo114-> Nodo115;
+Nodo115-> Nodo114;
+Nodo114-> Nodo132;
+Nodo132-> Nodo114;
+
+Nodo115-> Nodo116;
+Nodo116-> Nodo115;
+Nodo115-> Nodo133;
+Nodo133-> Nodo115;
+
+Nodo116-> Nodo117;
+Nodo117-> Nodo116;
+Nodo116-> Nodo134;
+Nodo134-> Nodo116;
+
+Nodo117-> Nodo118;
+Nodo118-> Nodo117;
+Nodo117-> Nodo135;
+Nodo135-> Nodo117;
+
+Nodo118-> Nodo119;
+Nodo119-> Nodo118;
+Nodo118-> Nodo136;
+Nodo136-> Nodo118;
+
+Nodo119-> Nodo120;
+Nodo120-> Nodo119;
+Nodo119-> Nodo137;
+Nodo137-> Nodo119;
+
+Nodo120-> Nodo121;
+Nodo121-> Nodo120;
+Nodo120-> Nodo138;
+Nodo138-> Nodo120;
+
+Nodo121-> Nodo122;
+Nodo122-> Nodo121;
+Nodo121-> Nodo139;
+Nodo139-> Nodo121;
+
+Nodo122-> Nodo123;
+Nodo123-> Nodo122;
+Nodo122-> Nodo140;
+Nodo140-> Nodo122;
+
+Nodo123-> Nodo124;
+Nodo124-> Nodo123;
+Nodo123-> Nodo141;
+Nodo141-> Nodo123;
+
+Nodo124-> Nodo125;
+Nodo125-> Nodo124;
+Nodo124-> Nodo142;
+Nodo142-> Nodo124;
+
+Nodo125-> Nodo143;
+Nodo143-> Nodo125;
+
+Nodo126-> Nodo127;
+Nodo127-> Nodo126;
+Nodo126-> Nodo144;
+Nodo144-> Nodo126;
+
+Nodo127-> Nodo128;
+Nodo128-> Nodo127;
+Nodo127-> Nodo145;
+Nodo145-> Nodo127;
+
+Nodo128-> Nodo129;
+Nodo129-> Nodo128;
+Nodo128-> Nodo146;
+Nodo146-> Nodo128;
+
+Nodo129-> Nodo130;
+Nodo130-> Nodo129;
+Nodo129-> Nodo147;
+Nodo147-> Nodo129;
+
+Nodo130-> Nodo131;
+Nodo131-> Nodo130;
+Nodo130-> Nodo148;
+Nodo148-> Nodo130;
+
+Nodo131-> Nodo132;
+Nodo132-> Nodo131;
+Nodo131-> Nodo149;
+Nodo149-> Nodo131;
+
+Nodo132-> Nodo133;
+Nodo133-> Nodo132;
+Nodo132-> Nodo150;
+Nodo150-> Nodo132;
+
+Nodo133-> Nodo134;
+Nodo134-> Nodo133;
+Nodo133-> Nodo151;
+Nodo151-> Nodo133;
+
+Nodo134-> Nodo135;
+Nodo135-> Nodo134;
+Nodo134-> Nodo152;
+Nodo152-> Nodo134;
+
+Nodo135-> Nodo136;
+Nodo136-> Nodo135;
+Nodo135-> Nodo153;
+Nodo153-> Nodo135;
+
+Nodo136-> Nodo137;
+Nodo137-> Nodo136;
+Nodo136-> Nodo154;
+Nodo154-> Nodo136;
+
+Nodo137-> Nodo138;
+Nodo138-> Nodo137;
+Nodo137-> Nodo155;
+Nodo155-> Nodo137;
+
+Nodo138-> Nodo139;
+Nodo139-> Nodo138;
+Nodo138-> Nodo156;
+Nodo156-> Nodo138;
+
+Nodo139-> Nodo140;
+Nodo140-> Nodo139;
+Nodo139-> Nodo157;
+Nodo157-> Nodo139;
+
+Nodo140-> Nodo141;
+Nodo141-> Nodo140;
+Nodo140-> Nodo158;
+Nodo158-> Nodo140;
+
+Nodo141-> Nodo142;
+Nodo142-> Nodo141;
+Nodo141-> Nodo159;
+Nodo159-> Nodo141;
+
+Nodo142-> Nodo143;
+Nodo143-> Nodo142;
+Nodo142-> Nodo160;
+Nodo160-> Nodo142;
+
+Nodo143-> Nodo161;
+Nodo161-> Nodo143;
+
+Nodo144-> Nodo145;
+Nodo145-> Nodo144;
+Nodo144-> Nodo162;
+Nodo162-> Nodo144;
+
+Nodo145-> Nodo146;
+Nodo146-> Nodo145;
+Nodo145-> Nodo163;
+Nodo163-> Nodo145;
+
+Nodo146-> Nodo147;
+Nodo147-> Nodo146;
+Nodo146-> Nodo164;
+Nodo164-> Nodo146;
+
+Nodo147-> Nodo148;
+Nodo148-> Nodo147;
+Nodo147-> Nodo165;
+Nodo165-> Nodo147;
+
+Nodo148-> Nodo149;
+Nodo149-> Nodo148;
+Nodo148-> Nodo166;
+Nodo166-> Nodo148;
+
+Nodo149-> Nodo150;
+Nodo150-> Nodo149;
+Nodo149-> Nodo167;
+Nodo167-> Nodo149;
+
+Nodo150-> Nodo151;
+Nodo151-> Nodo150;
+Nodo150-> Nodo168;
+Nodo168-> Nodo150;
+
+Nodo151-> Nodo152;
+Nodo152-> Nodo151;
+Nodo151-> Nodo169;
+Nodo169-> Nodo151;
+
+Nodo152-> Nodo153;
+Nodo153-> Nodo152;
+Nodo152-> Nodo170;
+Nodo170-> Nodo152;
+
+Nodo153-> Nodo154;
+Nodo154-> Nodo153;
+Nodo153-> Nodo171;
+Nodo171-> Nodo153;
+
+Nodo154-> Nodo155;
+Nodo155-> Nodo154;
+Nodo154-> Nodo172;
+Nodo172-> Nodo154;
+
+Nodo155-> Nodo156;
+Nodo156-> Nodo155;
+Nodo155-> Nodo173;
+Nodo173-> Nodo155;
+
+Nodo156-> Nodo157;
+Nodo157-> Nodo156;
+Nodo156-> Nodo174;
+Nodo174-> Nodo156;
+
+Nodo157-> Nodo158;
+Nodo158-> Nodo157;
+Nodo157-> Nodo175;
+Nodo175-> Nodo157;
+
+Nodo158-> Nodo159;
+Nodo159-> Nodo158;
+Nodo158-> Nodo176;
+Nodo176-> Nodo158;
+
+Nodo159-> Nodo160;
+Nodo160-> Nodo159;
+Nodo159-> Nodo177;
+Nodo177-> Nodo159;
+
+Nodo160-> Nodo161;
+Nodo161-> Nodo160;
+Nodo160-> Nodo178;
+Nodo178-> Nodo160;
+
+Nodo161-> Nodo179;
+Nodo179-> Nodo161;
+
+Nodo162-> Nodo163;
+Nodo163-> Nodo162;
+
+Nodo163-> Nodo164;
+Nodo164-> Nodo163;
+Nodo164-> Nodo165;
+Nodo165-> Nodo164;
+Nodo165-> Nodo166;
+Nodo166-> Nodo165;
+Nodo166-> Nodo167;
+Nodo167-> Nodo166;
+Nodo167-> Nodo168;
+Nodo168-> Nodo167;
+Nodo168-> Nodo169;
+Nodo169-> Nodo168;
+Nodo169-> Nodo170;
+Nodo170-> Nodo169;
+Nodo170-> Nodo171;
+Nodo171-> Nodo170;
+Nodo171-> Nodo172;
+Nodo172-> Nodo171;
+Nodo172-> Nodo173;
+Nodo173-> Nodo172;
+Nodo173-> Nodo174;
+Nodo174-> Nodo173;
+Nodo174-> Nodo175;
+Nodo175-> Nodo174;
+Nodo175-> Nodo176;
+Nodo176-> Nodo175;
+Nodo176-> Nodo177;
+Nodo177-> Nodo176;
+Nodo177-> Nodo178;
+Nodo178-> Nodo177;
+Nodo178-> Nodo179;
+Nodo179-> Nodo178;
+1->Nodo0[color = white];
+Nodo0->1;
 2->Nodo1[color = white];
 Nodo1->2;
-3->Nodo1[color = white];
-Nodo1->3;
-4->Nodo1[color = white];
-Nodo1->4;
-5->Nodo1[color = white];
-Nodo1->5;
-6->Nodo1[color = white];
-Nodo1->6;
-7->Nodo1[color = white];
-Nodo1->7;
-8->Nodo1[color = white];
-Nodo1->8;
-9->Nodo1[color = white];
-Nodo1->9;
-11->Nodo1[color = white];
-Nodo1->11;
-11->13[color = white];
-13->Nodo1[color = white];
-Nodo1->13;
-13->15[color = white];
-15->Nodo1[color = white];
-Nodo1->15;
-15->17[color = white];
-17->Nodo1[color = white];
-Nodo1->17;
-1->10[color = white];
-10->Nodo1[color = white];
-Nodo1->10;
-10->12[color = white];
-12->Nodo1[color = white];
-Nodo1->12;
-12->14[color = white];
-14->Nodo1[color = white];
-Nodo1->14;
-14->16[color = white];
-16->Nodo1[color = white];
-Nodo1->16;
-18->Nodo1[color = white];
-Nodo1->18;
-19->Nodo1[color = white];
-Nodo1->19;
-20->Nodo1[color = white];
-Nodo1->20;
-21->Nodo1[color = white];
-Nodo1->21;
-22->Nodo1[color = white];
-Nodo1->22;
-23->Nodo1[color = white];
-Nodo1->23;
-24->Nodo1[color = white];
-Nodo1->24;
-25->Nodo1[color = white];
-Nodo1->25;
-26->Nodo1[color = white];
-Nodo1->26;
+3->Nodo2[color = white];
+Nodo2->3;
+4->Nodo3[color = white];
+Nodo3->4;
+5->Nodo4[color = white];
+Nodo4->5;
+6->Nodo5[color = white];
+Nodo5->6;
+7->Nodo6[color = white];
+Nodo6->7;
+8->Nodo7[color = white];
+Nodo7->8;
+9->Nodo8[color = white];
+Nodo8->9;
+10->Nodo9[color = white];
+Nodo9->10;
+11->Nodo10[color = white];
+Nodo10->11;
+12->Nodo11[color = white];
+Nodo11->12;
+13->Nodo12[color = white];
+Nodo12->13;
+14->Nodo13[color = white];
+Nodo13->14;
+15->Nodo14[color = white];
+Nodo14->15;
+16->Nodo15[color = white];
+Nodo15->16;
+17->Nodo16[color = white];
+Nodo16->17;
+18->Nodo17[color = white];
+Nodo17->18;
+20->Nodo17[color = white];
+Nodo17->20;
+20->22[color = white];
+22->Nodo35[color = white];
+Nodo35->22;
+22->24[color = white];
+24->Nodo53[color = white];
+Nodo53->24;
+24->26[color = white];
+26->Nodo71[color = white];
+Nodo71->26;
+26->28[color = white];
+28->Nodo89[color = white];
+Nodo89->28;
+28->30[color = white];
+30->Nodo107[color = white];
+Nodo107->30;
+30->32[color = white];
+32->Nodo125[color = white];
+Nodo125->32;
+32->34[color = white];
+34->Nodo143[color = white];
+Nodo143->34;
+34->36[color = white];
+36->Nodo161[color = white];
+Nodo161->36;
+36->38[color = white];
+38->Nodo179[color = white];
+Nodo179->38;
+1->19[color = white];
+19->Nodo0[color = white];
+Nodo0->19;
+19->21[color = white];
+21->Nodo18[color = white];
+Nodo18->21;
+21->23[color = white];
+23->Nodo36[color = white];
+Nodo36->23;
+23->25[color = white];
+25->Nodo54[color = white];
+Nodo54->25;
+25->27[color = white];
+27->Nodo72[color = white];
+Nodo72->27;
+27->29[color = white];
+29->Nodo90[color = white];
+Nodo90->29;
+29->31[color = white];
+31->Nodo108[color = white];
+Nodo108->31;
+31->33[color = white];
+33->Nodo126[color = white];
+Nodo126->33;
+33->35[color = white];
+35->Nodo144[color = white];
+Nodo144->35;
+35->37[color = white];
+37->Nodo162[color = white];
+Nodo162->37;
+39->Nodo162[color = white];
+Nodo162->39;
+40->Nodo163[color = white];
+Nodo163->40;
+41->Nodo164[color = white];
+Nodo164->41;
+42->Nodo165[color = white];
+Nodo165->42;
+43->Nodo166[color = white];
+Nodo166->43;
+44->Nodo167[color = white];
+Nodo167->44;
+45->Nodo168[color = white];
+Nodo168->45;
+46->Nodo169[color = white];
+Nodo169->46;
+47->Nodo170[color = white];
+Nodo170->47;
+48->Nodo171[color = white];
+Nodo171->48;
+49->Nodo172[color = white];
+Nodo172->49;
+50->Nodo173[color = white];
+Nodo173->50;
+51->Nodo174[color = white];
+Nodo174->51;
+52->Nodo175[color = white];
+Nodo175->52;
+53->Nodo176[color = white];
+Nodo176->53;
+54->Nodo177[color = white];
+Nodo177->54;
+55->Nodo178[color = white];
+Nodo178->55;
+56->Nodo179[color = white];
+Nodo179->56;
 
 }

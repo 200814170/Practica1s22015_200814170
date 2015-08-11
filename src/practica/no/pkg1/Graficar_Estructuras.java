@@ -7,6 +7,8 @@ package practica.no.pkg1;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +18,7 @@ import javax.swing.JOptionPane;
 public class Graficar_Estructuras {
 
     Graphviz A = new Graphviz();
+    Thread esperar = new Thread();
 
     public void Grificar_Lista_Doble() {
 
@@ -58,6 +61,13 @@ public class Graficar_Estructuras {
                 A.Guardar_Codigo_GRafo(Arch, "}\n}");
             } catch (IOException ex) {
             }
+            
+            try {
+                esperar.sleep(5000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Graficar_Estructuras.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
             A.Generar_Imagen_automata("C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe", "Lista Objetos.txt", "Lista Objetos.jpg");
         } else {
             JOptionPane.showMessageDialog(null, "\nNo existen elementos en la lista de objetos", "Advertencia", JOptionPane.INFORMATION_MESSAGE);
