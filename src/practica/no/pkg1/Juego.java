@@ -134,6 +134,8 @@ public class Juego extends javax.swing.JFrame {
             }
             actual_Matriz1 = actual_Matriz1.abajo;
         }
+        
+        Matriz_inicial.reacomodar_indices();
 
         this.Matriz_Tablero_Juego.raiz = Matriz.raiz;
         this.Pane_principal.setBackground(Color.BLUE);
@@ -359,15 +361,16 @@ public class Juego extends javax.swing.JFrame {
         System.out.println("Matriz");
         this.Matriz_Tablero_Juego.imprimir_matriz();
         this.Matriz_Tablero_Juego.eliminar_matriz();
+        this.Matriz_Tablero_Juego.raiz = this.Matriz_inicial.raiz;
 
         System.out.println("Matriz Original");
         this.Matriz_Tablero_Juego.imprimir_matriz();
         
-        Juego juegooooo2 = new Juego(contador_filas, contador_columnas, Matriz_inicial);
-        juegooooo2.setVisible(true);
-        this.cerrar();
-//        this.crear_pane_principal(this.contador_filas, this.contador_columnas);
-//        SwingUtilities.updateComponentTreeUI(this);
+        this.vidas = 1;
+        this.puntos = 0;
+        
+        this.crear_pane_principal(this.contador_filas, this.contador_columnas);
+        SwingUtilities.updateComponentTreeUI(this);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
